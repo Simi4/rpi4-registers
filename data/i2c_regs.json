@@ -1,0 +1,262 @@
+[
+	{
+		"Offset": "0x00",
+		"Name": "C",
+		"Description": "Control",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15",
+				"Name": "I2CEN",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14:11",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "10",
+				"Name": "INTR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "INTT",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "INTD",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "ST",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "5:4",
+				"Name": "CLEAR",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3:1",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "0",
+				"Name": "READ",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x04",
+		"Name": "S",
+		"Description": "Status",
+		"Fields": [
+			{
+				"Bits": "31:10",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "9",
+				"Name": "CLKT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "ERR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "RXF",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "TXE",
+				"Type": "RO",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "5",
+				"Name": "RXD",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "TXD",
+				"Type": "RO",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "3",
+				"Name": "RXR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "TXW",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "DONE",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "TA",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x08",
+		"Name": "DLEN",
+		"Description": "Data Length",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "DLEN",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0x0c",
+		"Name": "A",
+		"Description": "Slave Address",
+		"Fields": [
+			{
+				"Bits": "31:7",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "6:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00"
+			}
+		]
+	},
+	{
+		"Offset": "0x10",
+		"Name": "FIFO",
+		"Description": "Data FIFO",
+		"Fields": [
+			{
+				"Bits": "31:8",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "7:0",
+				"Name": "DATA",
+				"Type": "RW",
+				"Reset": "0x00"
+			}
+		]
+	},
+	{
+		"Offset": "0x14",
+		"Name": "DIV",
+		"Description": "Clock Divider",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "CDIV",
+				"Type": "RW",
+				"Reset": "0x05dc"
+			}
+		]
+	},
+	{
+		"Offset": "0x18",
+		"Name": "DEL",
+		"Description": "Data Delay",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "FEDL",
+				"Type": "RW",
+				"Reset": "0x0030"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "REDL",
+				"Type": "RW",
+				"Reset": "0x0030"
+			}
+		]
+	},
+	{
+		"Offset": "0x1c",
+		"Name": "CLKT",
+		"Description": "Clock Stretch Timeout",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "TOUT",
+				"Type": "RW",
+				"Reset": "0x0040"
+			}
+		]
+	}
+]

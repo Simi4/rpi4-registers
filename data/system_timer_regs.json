@@ -1,0 +1,117 @@
+[
+	{
+		"Offset": "0x00",
+		"Name": "CS",
+		"Description": "System Timer Control/Status",
+		"Fields": [
+			{
+				"Bits": "31:4",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "3",
+				"Name": "M3",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "M2",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "M1",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "M0",
+				"Type": "W1C",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x04",
+		"Name": "CLO",
+		"Description": "System Timer Counter Lower 32 bits",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "CNT",
+				"Type": "RO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x08",
+		"Name": "CHI",
+		"Description": "System Timer Counter Higher 32 bits",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "CNT",
+				"Type": "RO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x0c",
+		"Name": "C0",
+		"Description": "System Timer Compare 0",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "CMP",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x10",
+		"Name": "C1",
+		"Description": "System Timer Compare 1",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "CMP",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x14",
+		"Name": "C2",
+		"Description": "System Timer Compare 2",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "CMP",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x18",
+		"Name": "C3",
+		"Description": "System Timer Compare 3",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "CMP",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	}
+]

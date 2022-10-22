@@ -1,0 +1,1328 @@
+[
+	{
+		"Offset": "0x00",
+		"Name": "ARM_CONTROL",
+		"Description": "ARM Timer and AXI Error IRQ control",
+		"Fields": [
+			{
+				"Bits": "31:9",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "08",
+				"Name": "TIMER_INCREMENT",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "07",
+				"Name": "PROC_CLK_TIMER",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "AXIERRIRQ_EN",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5:0",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			}
+		]
+	},
+	{
+		"Offset": "0x0c",
+		"Name": "CORE_IRQ_CONTROL",
+		"Description": "VideoCore Interrupt Control",
+		"Fields": [
+			{
+				"Bits": "31:7",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "06:04",
+				"Name": "AXI_ERR_CORE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3:0",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			}
+		]
+	},
+	{
+		"Offset": "0x10",
+		"Name": "PMU_CONTROL_SET",
+		"Description": "PMU Bit Set",
+		"Fields": [
+			{
+				"Bits": "31:8",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "07:04",
+				"Name": "PMU_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03:00",
+				"Name": "PMU_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x14",
+		"Name": "PMU_CONTROL_CLR",
+		"Description": "PMU Bit Clear",
+		"Fields": [
+			{
+				"Bits": "31:8",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			}
+		]
+	},
+	{
+		"Offset": "0x24",
+		"Name": "PERI_IRQ_ROUTE0",
+		"Description": "Peripheral Interrupt Routing (Bank 0)",
+		"Fields": [
+			{
+				"Bits": "07:04",
+				"Name": "PMU_FIQ",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03:00",
+				"Name": "PMU_IRQ",
+				"Type": "W1C",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x30",
+		"Name": "AXI_QUIET_TIME",
+		"Description": "AXI Outstanding Transaction Time and IRQ Control",
+		"Fields": [
+			{
+				"Bits": "31:24",
+				"Name": "WRITE_MASKS",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "23:3",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "02:00",
+				"Name": "LOCAL_TIMER_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x34",
+		"Name": "LOCAL_TIMER_CONTROL",
+		"Description": "Local Timer Control",
+		"Fields": [
+			{
+				"Bits": "31:21",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "20",
+				"Name": "AXI_QUIET_IRQ_ENB",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "19:00",
+				"Name": "AXI_QUIET_TIME",
+				"Type": "RW",
+				"Reset": "0x00000"
+			}
+		]
+	},
+	{
+		"Offset": "0x38",
+		"Name": "LOCAL_TIMER_IRQ",
+		"Description": "Local Timer Reload and Interrupt",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "TIMER_IRQ_FLAG",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "",
+				"Name": "30",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "",
+				"Name": "29",
+				"Type": "-",
+				"Reset": "RW"
+			},
+			{
+				"Bits": "",
+				"Name": "28",
+				"Type": "-",
+				"Reset": "RW"
+			},
+			{
+				"Bits": "",
+				"Name": "27:00",
+				"Type": "-",
+				"Reset": "RW"
+			}
+		]
+	},
+	{
+		"Offset": "0x40",
+		"Name": "TIMER_CNTRL0",
+		"Description": "Timer Interrupt Control for ARM Core 0",
+		"Fields": [
+			{
+				"Bits": "31:8",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "07",
+				"Name": "CNT_V_IRQ_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "CNT_HP_IRQ_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "CNT_PNS_IRQ_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "CNT_PS_IRQ_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "CNT_V_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "CNT_HP_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "CNT_PNS_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "CNT_PS_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x44",
+		"Name": "TIMER_CNTRL1",
+		"Description": "Timer Interrupt Control for ARM Core 1",
+		"Fields": [
+			{
+				"Bits": "31:8",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "07",
+				"Name": "CNT_V_IRQ_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "CNT_HP_IRQ_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "CNT_PNS_IRQ_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "CNT_PS_IRQ_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "CNT_V_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "CNT_HP_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "CNT_PNS_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "CNT_PS_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x48",
+		"Name": "TIMER_CNTRL2",
+		"Description": "Timer Interrupt Control for ARM Core 2",
+		"Fields": [
+			{
+				"Bits": "31:8",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "07",
+				"Name": "CNT_V_IRQ_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "CNT_HP_IRQ_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "CNT_PNS_IRQ_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "CNT_PS_IRQ_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "CNT_V_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "CNT_HP_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "CNT_PNS_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "CNT_PS_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x4c",
+		"Name": "TIMER_CNTRL3",
+		"Description": "Timer Interrupt Control for ARM Core 3",
+		"Fields": [
+			{
+				"Bits": "31:8",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "07",
+				"Name": "CNT_V_IRQ_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "CNT_HP_IRQ_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "CNT_PNS_IRQ_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "CNT_PS_IRQ_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "CNT_V_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "CNT_HP_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "CNT_PNS_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "CNT_PS_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x50",
+		"Name": "MAILBOX_CNTRL0",
+		"Description": "Mailbox Interrupt Control for ARM Core 0",
+		"Fields": [
+			{
+				"Bits": "31:8",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "07",
+				"Name": "MBOX3_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "MBOX2_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "MBOX1_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "MBOX0_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "MBOX3_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "MBOX2_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MBOX1_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "MBOX0_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x54",
+		"Name": "MAILBOX_CNTRL1",
+		"Description": "Mailbox Interrupt Control for ARM Core 1",
+		"Fields": [
+			{
+				"Bits": "31:8",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "07",
+				"Name": "MBOX3_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "MBOX2_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "MBOX1_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "MBOX0_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "MBOX3_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "MBOX2_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MBOX1_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "MBOX0_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x58",
+		"Name": "MAILBOX_CNTRL2",
+		"Description": "Mailbox Interrupt Control for ARM Core 2",
+		"Fields": [
+			{
+				"Bits": "31:8",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "07",
+				"Name": "MBOX3_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "MBOX2_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "MBOX1_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "MBOX0_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "MBOX3_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "MBOX2_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MBOX1_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "MBOX0_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x5c",
+		"Name": "MAILBOX_CNTRL3",
+		"Description": "Mailbox Interrupt Control for ARM Core 3",
+		"Fields": [
+			{
+				"Bits": "31:8",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "07",
+				"Name": "MBOX3_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "MBOX2_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "MBOX1_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "MBOX0_FIQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "MBOX3_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "MBOX2_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MBOX1_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "MBOX0_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x60",
+		"Name": "IRQ_SOURCE0",
+		"Description": "IRQ Source flags for ARM Core 0",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "30",
+				"Name": "AXI_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "29:12",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "11",
+				"Name": "TIMER_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "AXI_QUIET",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "09",
+				"Name": "PMU_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "08",
+				"Name": "CORE_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "07:04",
+				"Name": "MAILBOX_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "CNT_V_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "CNT_HP_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "CNT_PNS_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "CNT_PS_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x64",
+		"Name": "IRQ_SOURCE1",
+		"Description": "IRQ Source flags for ARM Core 1",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "30",
+				"Name": "AXI_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "29:12",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "11",
+				"Name": "TIMER_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "AXI_QUIET",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "09",
+				"Name": "PMU_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "08",
+				"Name": "CORE_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "07:04",
+				"Name": "MAILBOX_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "CNT_V_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "CNT_HP_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "CNT_PNS_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "CNT_PS_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x68",
+		"Name": "IRQ_SOURCE2",
+		"Description": "IRQ Source flags for ARM Core 2",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "30",
+				"Name": "AXI_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "29:12",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "11",
+				"Name": "TIMER_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "AXI_QUIET",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "09",
+				"Name": "PMU_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "08",
+				"Name": "CORE_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "07:04",
+				"Name": "MAILBOX_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "CNT_V_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "CNT_HP_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "CNT_PNS_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "CNT_PS_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x6c",
+		"Name": "IRQ_SOURCE3",
+		"Description": "IRQ Source flags for ARM Core 3",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "30",
+				"Name": "AXI_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "29:12",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "11",
+				"Name": "TIMER_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "AXI_QUIET",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "09",
+				"Name": "PMU_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "08",
+				"Name": "CORE_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "07:04",
+				"Name": "MAILBOX_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "CNT_V_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "CNT_HP_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "CNT_PNS_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "CNT_PS_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x70",
+		"Name": "FIQ_SOURCE0",
+		"Description": "FIQ Source flags for ARM Core 0",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "30",
+				"Name": "AXI_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "29:12",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "11",
+				"Name": "LOCAL_TIMER_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "09",
+				"Name": "PMU_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "08",
+				"Name": "CORE_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "07:04",
+				"Name": "MAILBOX_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "CNT_V_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "CNT_HP_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "CNT_PNS_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "CNT_PS_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x74",
+		"Name": "FIQ_SOURCE1",
+		"Description": "FIQ Source flags for ARM Core 1",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "30",
+				"Name": "AXI_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "29:12",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "11",
+				"Name": "LOCAL_TIMER_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "09",
+				"Name": "PMU_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "08",
+				"Name": "CORE_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "07:04",
+				"Name": "MAILBOX_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "CNT_V_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "CNT_HP_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "CNT_PNS_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "CNT_PS_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x78",
+		"Name": "FIQ_SOURCE2",
+		"Description": "FIQ Source flags for ARM Core 2",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "30",
+				"Name": "AXI_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "29:12",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "11",
+				"Name": "LOCAL_TIMER_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "09",
+				"Name": "PMU_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "08",
+				"Name": "CORE_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "07:04",
+				"Name": "MAILBOX_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "CNT_V_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "CNT_HP_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "CNT_PNS_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "CNT_PS_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x7c",
+		"Name": "FIQ_SOURCE3",
+		"Description": "FIQ Source flags for ARM Core 3",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "30",
+				"Name": "AXI_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "29:12",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "11",
+				"Name": "LOCAL_TIMER_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "09",
+				"Name": "PMU_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "08",
+				"Name": "CORE_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "07:04",
+				"Name": "MAILBOX_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "CNT_V_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "CNT_HP_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "CNT_PNS_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "CNT_PS_FIQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	}
+]

@@ -1,0 +1,6185 @@
+[
+	{
+		"Offset": "0x000",
+		"Name": "0_CS",
+		"Description": "DMA Channel 0 Control and Status",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "RESET",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30",
+				"Name": "ABORT",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "29",
+				"Name": "DISDEBUG",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "28",
+				"Name": "WAIT_FOR_OUTS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "27:24",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "23:20",
+				"Name": "PANIC_PRIORITY",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "19:16",
+				"Name": "PRIORITY",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "15:9",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "8",
+				"Name": "ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "6",
+				"Name": "WAITING_FOR_OU",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "DREQ_STOPS_DM",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "PAUSED",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "DREQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "INT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "END",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "ACTIVE",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x004",
+		"Name": "0_CONBLK_AD",
+		"Description": "DMA Channel 0 Control Block Address",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "SCB_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x008",
+		"Name": "0_TI",
+		"Description": "DMA Channel 0 CB Word 0",
+		"Fields": [
+			{
+				"Bits": "31:27",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "26",
+				"Name": "NO_WIDE_BURSTS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "25:21",
+				"Name": "WAITS",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "20:16",
+				"Name": "PERMAP",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "15:12",
+				"Name": "BURST_LENGTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11",
+				"Name": "SRC_IGNORE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "SRC_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "SRC_WIDTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "SRC_INC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "DEST_IGNORE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "DEST_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "DEST_WIDTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "DEST_INC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "WAIT_RESP",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "1",
+				"Name": "TDMODE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "INTEN",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x00c",
+		"Name": "0_SOURCE_AD",
+		"Description": "DMA Channel 0 CB Word 1 (Source Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "S_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x010",
+		"Name": "0_DEST_AD",
+		"Description": "DMA Channel 0 CB Word 2 (Destination Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "D_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x014",
+		"Name": "0_TXFR_LEN",
+		"Description": "DMA Channel 0 CB Word 3 (Transfer Length)",
+		"Fields": [
+			{
+				"Bits": "31:30",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "29:16",
+				"Name": "YLENGTH",
+				"Type": "RW",
+				"Reset": "0x0000"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "XLENGTH",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0x018",
+		"Name": "0_STRIDE",
+		"Description": "DMA Channel 0 CB Word 4 (2D Stride)",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "D_STRIDE",
+				"Type": "RW",
+				"Reset": "0x0000"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "S_STRIDE",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0x01c",
+		"Name": "0_NEXTCONBK",
+		"Description": "DMA Channel 0 CB Word 5 (Next CB Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x020",
+		"Name": "0_DEBUG",
+		"Description": "DMA Channel 0 Debug",
+		"Fields": [
+			{
+				"Bits": "31:29",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "28",
+				"Name": "LITE",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "27:25",
+				"Name": "VERSION",
+				"Type": "RO",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "24:16",
+				"Name": "DMA_STATE",
+				"Type": "RO",
+				"Reset": "0x000"
+			},
+			{
+				"Bits": "15:8",
+				"Name": "DMA_ID",
+				"Type": "RO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "7:4",
+				"Name": "OUTSTANDING_WRITES",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "2",
+				"Name": "READ_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "FIFO_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "READ_LAST_NOT_SET_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x100",
+		"Name": "1_CS",
+		"Description": "DMA Channel 1 Control and Status",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "RESET",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30",
+				"Name": "ABORT",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "29",
+				"Name": "DISDEBUG",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "28",
+				"Name": "WAIT_FOR_OUTS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "27:24",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "23:20",
+				"Name": "PANIC_PRIORITY",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "19:16",
+				"Name": "PRIORITY",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "15:9",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "8",
+				"Name": "ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "6",
+				"Name": "WAITING_FOR_OU",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "DREQ_STOPS_DM",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "PAUSED",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "DREQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "INT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "END",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "ACTIVE",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x104",
+		"Name": "1_CONBLK_AD",
+		"Description": "DMA Channel 1 Control Block Address",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "SCB_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x108",
+		"Name": "1_TI",
+		"Description": "DMA Channel 1 CB Word 0 (Transfer Information)",
+		"Fields": [
+			{
+				"Bits": "31:27",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "26",
+				"Name": "NO_WIDE_BURSTS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "25:21",
+				"Name": "WAITS",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "20:16",
+				"Name": "PERMAP",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "15:12",
+				"Name": "BURST_LENGTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11",
+				"Name": "SRC_IGNORE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "SRC_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "SRC_WIDTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "SRC_INC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "DEST_IGNORE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "DEST_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "DEST_WIDTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "DEST_INC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "WAIT_RESP",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "1",
+				"Name": "TDMODE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "INTEN",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x10c",
+		"Name": "1_SOURCE_AD",
+		"Description": "DMA Channel 1 CB Word 1 (Source Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "S_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x110",
+		"Name": "1_DEST_AD",
+		"Description": "DMA Channel 1 CB Word 2 (Destination Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "D_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x114",
+		"Name": "1_TXFR_LEN",
+		"Description": "DMA Channel 1 CB Word 3 (Transfer Length)",
+		"Fields": [
+			{
+				"Bits": "31:30",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "29:16",
+				"Name": "YLENGTH",
+				"Type": "RW",
+				"Reset": "0x0000"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "XLENGTH",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0x118",
+		"Name": "1_STRIDE",
+		"Description": "DMA Channel 1 CB Word 4 (2D Stride)",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "D_STRIDE",
+				"Type": "RW",
+				"Reset": "0x0000"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "S_STRIDE",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0x11c",
+		"Name": "1_NEXTCONBK",
+		"Description": "DMA Channel 1 CB Word 5 (Next CB Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x120",
+		"Name": "1_DEBUG",
+		"Description": "DMA Channel 1 Debug",
+		"Fields": [
+			{
+				"Bits": "31:29",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "28",
+				"Name": "LITE",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "27:25",
+				"Name": "VERSION",
+				"Type": "RO",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "24:16",
+				"Name": "DMA_STATE",
+				"Type": "RO",
+				"Reset": "0x000"
+			},
+			{
+				"Bits": "15:8",
+				"Name": "DMA_ID",
+				"Type": "RO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "7:4",
+				"Name": "OUTSTANDING_WRITES",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "2",
+				"Name": "READ_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "FIFO_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "READ_LAST_NOT_SET_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x200",
+		"Name": "2_CS",
+		"Description": "DMA Channel 2 Control and Status",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "RESET",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30",
+				"Name": "ABORT",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "29",
+				"Name": "DISDEBUG",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "28",
+				"Name": "WAIT_FOR_OUTS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "27:24",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "23:20",
+				"Name": "PANIC_PRIORITY",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "19:16",
+				"Name": "PRIORITY",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "15:9",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "8",
+				"Name": "ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "6",
+				"Name": "WAITING_FOR_OU",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "DREQ_STOPS_DM",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "PAUSED",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "DREQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "INT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "END",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "ACTIVE",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x204",
+		"Name": "2_CONBLK_AD",
+		"Description": "DMA Channel 2 Control Block Address",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "SCB_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x208",
+		"Name": "2_TI",
+		"Description": "DMA Channel 2 CB Word 0 (Transfer Information)",
+		"Fields": [
+			{
+				"Bits": "31:27",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "26",
+				"Name": "NO_WIDE_BURSTS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "25:21",
+				"Name": "WAITS",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "20:16",
+				"Name": "PERMAP",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "15:12",
+				"Name": "BURST_LENGTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11",
+				"Name": "SRC_IGNORE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "SRC_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "SRC_WIDTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "SRC_INC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "DEST_IGNORE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "DEST_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "DEST_WIDTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "DEST_INC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "WAIT_RESP",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "1",
+				"Name": "TDMODE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "INTEN",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x20c",
+		"Name": "2_SOURCE_AD",
+		"Description": "DMA Channel 2 CB Word 1 (Source Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "S_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x210",
+		"Name": "2_DEST_AD",
+		"Description": "DMA Channel 2 CB Word 2 (Destination Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "D_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x214",
+		"Name": "2_TXFR_LEN",
+		"Description": "DMA Channel 2 CB Word 3 (Transfer Length)",
+		"Fields": [
+			{
+				"Bits": "31:30",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "29:16",
+				"Name": "YLENGTH",
+				"Type": "RW",
+				"Reset": "0x0000"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "XLENGTH",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0x218",
+		"Name": "2_STRIDE",
+		"Description": "DMA Channel 2 CB Word 4 (2D Stride)",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "D_STRIDE",
+				"Type": "RW",
+				"Reset": "0x0000"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "S_STRIDE",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0x21c",
+		"Name": "2_NEXTCONBK",
+		"Description": "DMA Channel 2 CB Word 5 (Next CB Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x220",
+		"Name": "2_DEBUG",
+		"Description": "DMA Channel 2 Debug",
+		"Fields": [
+			{
+				"Bits": "31:29",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "28",
+				"Name": "LITE",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "27:25",
+				"Name": "VERSION",
+				"Type": "RO",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "24:16",
+				"Name": "DMA_STATE",
+				"Type": "RO",
+				"Reset": "0x000"
+			},
+			{
+				"Bits": "15:8",
+				"Name": "DMA_ID",
+				"Type": "RO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "7:4",
+				"Name": "OUTSTANDING_WRITES",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "2",
+				"Name": "READ_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "FIFO_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "READ_LAST_NOT_SET_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x300",
+		"Name": "3_CS",
+		"Description": "DMA Channel 3 Control and Status",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "RESET",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30",
+				"Name": "ABORT",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "29",
+				"Name": "DISDEBUG",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "28",
+				"Name": "WAIT_FOR_OUTS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "27:24",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "23:20",
+				"Name": "PANIC_PRIORITY",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "19:16",
+				"Name": "PRIORITY",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "15:9",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "8",
+				"Name": "ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "6",
+				"Name": "WAITING_FOR_OU",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "DREQ_STOPS_DM",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "PAUSED",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "DREQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "INT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "END",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "ACTIVE",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x304",
+		"Name": "3_CONBLK_AD",
+		"Description": "DMA Channel 3 Control Block Address",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "SCB_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x308",
+		"Name": "3_TI",
+		"Description": "DMA Channel 3 CB Word 0 (Transfer Information)",
+		"Fields": [
+			{
+				"Bits": "31:27",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "26",
+				"Name": "NO_WIDE_BURSTS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "25:21",
+				"Name": "WAITS",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "20:16",
+				"Name": "PERMAP",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "15:12",
+				"Name": "BURST_LENGTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11",
+				"Name": "SRC_IGNORE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "SRC_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "SRC_WIDTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "SRC_INC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "DEST_IGNORE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "DEST_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "DEST_WIDTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "DEST_INC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "WAIT_RESP",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "1",
+				"Name": "TDMODE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "INTEN",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x30c",
+		"Name": "3_SOURCE_AD",
+		"Description": "DMA Channel 3 CB Word 1 (Source Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "S_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x310",
+		"Name": "3_DEST_AD",
+		"Description": "DMA Channel 3 CB Word 2 (Destination Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "D_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x314",
+		"Name": "3_TXFR_LEN",
+		"Description": "DMA Channel 3 CB Word 3 (Transfer Length)",
+		"Fields": [
+			{
+				"Bits": "31:30",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "29:16",
+				"Name": "YLENGTH",
+				"Type": "RW",
+				"Reset": "0x0000"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "XLENGTH",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0x318",
+		"Name": "3_STRIDE",
+		"Description": "DMA Channel 3 CB Word 4 (2D Stride)",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "D_STRIDE",
+				"Type": "RW",
+				"Reset": "0x0000"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "S_STRIDE",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0x31c",
+		"Name": "3_NEXTCONBK",
+		"Description": "DMA Channel 3 CB Word 5 (Next CB Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x320",
+		"Name": "3_DEBUG",
+		"Description": "DMA Channel 0 Debug",
+		"Fields": [
+			{
+				"Bits": "31:29",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "28",
+				"Name": "LITE",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "27:25",
+				"Name": "VERSION",
+				"Type": "RO",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "24:16",
+				"Name": "DMA_STATE",
+				"Type": "RO",
+				"Reset": "0x000"
+			},
+			{
+				"Bits": "15:8",
+				"Name": "DMA_ID",
+				"Type": "RO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "7:4",
+				"Name": "OUTSTANDING_WRITES",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "2",
+				"Name": "READ_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "FIFO_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "READ_LAST_NOT_SET_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x400",
+		"Name": "4_CS",
+		"Description": "DMA Channel 4 Control and Status",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "RESET",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30",
+				"Name": "ABORT",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "29",
+				"Name": "DISDEBUG",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "28",
+				"Name": "WAIT_FOR_OUTS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "27:24",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "23:20",
+				"Name": "PANIC_PRIORITY",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "19:16",
+				"Name": "PRIORITY",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "15:9",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "8",
+				"Name": "ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "6",
+				"Name": "WAITING_FOR_OU",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "DREQ_STOPS_DM",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "PAUSED",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "DREQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "INT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "END",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "ACTIVE",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x404",
+		"Name": "4_CONBLK_AD",
+		"Description": "DMA Channel 4 Control Block Address",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "SCB_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x408",
+		"Name": "4_TI",
+		"Description": "DMA Channel 4 CB Word 0 (Transfer Information)",
+		"Fields": [
+			{
+				"Bits": "31:27",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "26",
+				"Name": "NO_WIDE_BURSTS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "25:21",
+				"Name": "WAITS",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "20:16",
+				"Name": "PERMAP",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "15:12",
+				"Name": "BURST_LENGTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11",
+				"Name": "SRC_IGNORE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "SRC_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "SRC_WIDTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "SRC_INC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "DEST_IGNORE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "DEST_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "DEST_WIDTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "DEST_INC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "WAIT_RESP",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "1",
+				"Name": "TDMODE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "INTEN",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x40c",
+		"Name": "4_SOURCE_AD",
+		"Description": "DMA Channel 4 CB Word 1 (Source Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "S_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x410",
+		"Name": "4_DEST_AD",
+		"Description": "DMA Channel 4 CB Word 2 (Destination Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "D_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x414",
+		"Name": "4_TXFR_LEN",
+		"Description": "DMA Channel 4 CB Word 3 (Transfer Length)",
+		"Fields": [
+			{
+				"Bits": "31:30",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "29:16",
+				"Name": "YLENGTH",
+				"Type": "RW",
+				"Reset": "0x0000"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "XLENGTH",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0x418",
+		"Name": "4_STRIDE",
+		"Description": "DMA Channel 4 CB Word 4 (2D Stride)",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "D_STRIDE",
+				"Type": "RW",
+				"Reset": "0x0000"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "S_STRIDE",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0x41c",
+		"Name": "4_NEXTCONBK",
+		"Description": "DMA Channel 4 CB Word 5 (Next CB Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x420",
+		"Name": "4_DEBUG",
+		"Description": "DMA Channel 0 Debug",
+		"Fields": [
+			{
+				"Bits": "31:29",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "28",
+				"Name": "LITE",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "27:25",
+				"Name": "VERSION",
+				"Type": "RO",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "24:16",
+				"Name": "DMA_STATE",
+				"Type": "RO",
+				"Reset": "0x000"
+			},
+			{
+				"Bits": "15:8",
+				"Name": "DMA_ID",
+				"Type": "RO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "7:4",
+				"Name": "OUTSTANDING_WRITES",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "2",
+				"Name": "READ_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "FIFO_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "READ_LAST_NOT_SET_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x500",
+		"Name": "5_CS",
+		"Description": "DMA Channel 5 Control and Status",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "RESET",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30",
+				"Name": "ABORT",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "29",
+				"Name": "DISDEBUG",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "28",
+				"Name": "WAIT_FOR_OUTS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "27:24",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "23:20",
+				"Name": "PANIC_PRIORITY",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "19:16",
+				"Name": "PRIORITY",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "15:9",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "8",
+				"Name": "ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "6",
+				"Name": "WAITING_FOR_OU",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "DREQ_STOPS_DM",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "PAUSED",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "DREQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "INT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "END",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "ACTIVE",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x504",
+		"Name": "5_CONBLK_AD",
+		"Description": "DMA Channel 5 Control Block Address",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "SCB_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x508",
+		"Name": "5_TI",
+		"Description": "DMA Channel 5 CB Word 0 (Transfer Information)",
+		"Fields": [
+			{
+				"Bits": "31:27",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "26",
+				"Name": "NO_WIDE_BURSTS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "25:21",
+				"Name": "WAITS",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "20:16",
+				"Name": "PERMAP",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "15:12",
+				"Name": "BURST_LENGTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11",
+				"Name": "SRC_IGNORE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "SRC_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "SRC_WIDTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "SRC_INC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "DEST_IGNORE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "DEST_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "DEST_WIDTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "DEST_INC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "WAIT_RESP",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "1",
+				"Name": "TDMODE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "INTEN",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x50c",
+		"Name": "5_SOURCE_AD",
+		"Description": "DMA Channel 5 CB Word 1 (Source Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "S_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x510",
+		"Name": "5_DEST_AD",
+		"Description": "DMA Channel 5 CB Word 2 (Destination Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "D_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x514",
+		"Name": "5_TXFR_LEN",
+		"Description": "DMA Channel 5 CB Word 3 (Transfer Length)",
+		"Fields": [
+			{
+				"Bits": "31:30",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "29:16",
+				"Name": "YLENGTH",
+				"Type": "RW",
+				"Reset": "0x0000"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "XLENGTH",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0x518",
+		"Name": "5_STRIDE",
+		"Description": "DMA Channel 5 CB Word 4 (2D Stride)",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "D_STRIDE",
+				"Type": "RW",
+				"Reset": "0x0000"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "S_STRIDE",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0x51c",
+		"Name": "5_NEXTCONBK",
+		"Description": "DMA Channel 5 CB Word 5 (Next CB Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x520",
+		"Name": "5_DEBUG",
+		"Description": "DMA Channel 5 Debug",
+		"Fields": [
+			{
+				"Bits": "31:29",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "28",
+				"Name": "LITE",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "27:25",
+				"Name": "VERSION",
+				"Type": "RO",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "24:16",
+				"Name": "DMA_STATE",
+				"Type": "RO",
+				"Reset": "0x000"
+			},
+			{
+				"Bits": "15:8",
+				"Name": "DMA_ID",
+				"Type": "RO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "7:4",
+				"Name": "OUTSTANDING_WRITES",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "2",
+				"Name": "READ_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "FIFO_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "READ_LAST_NOT_SET_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x600",
+		"Name": "6_CS",
+		"Description": "DMA Channel 6 Control and Status",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "RESET",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30",
+				"Name": "ABORT",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "29",
+				"Name": "DISDEBUG",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "28",
+				"Name": "WAIT_FOR_OUTS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "27:24",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "23:20",
+				"Name": "PANIC_PRIORITY",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "19:16",
+				"Name": "PRIORITY",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "15:9",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "8",
+				"Name": "ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "6",
+				"Name": "WAITING_FOR_OU",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "DREQ_STOPS_DM",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "PAUSED",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "DREQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "INT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "END",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "ACTIVE",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x604",
+		"Name": "6_CONBLK_AD",
+		"Description": "DMA Channel 6 Control Block Address",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "SCB_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x608",
+		"Name": "6_TI",
+		"Description": "DMA Channel 6 CB Word 0 (Transfer Information)",
+		"Fields": [
+			{
+				"Bits": "31:27",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "26",
+				"Name": "NO_WIDE_BURSTS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "25:21",
+				"Name": "WAITS",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "20:16",
+				"Name": "PERMAP",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "15:12",
+				"Name": "BURST_LENGTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11",
+				"Name": "SRC_IGNORE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "SRC_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "SRC_WIDTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "SRC_INC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "DEST_IGNORE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "DEST_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "DEST_WIDTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "DEST_INC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "WAIT_RESP",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "1",
+				"Name": "TDMODE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "INTEN",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x60c",
+		"Name": "6_SOURCE_AD",
+		"Description": "DMA Channel 6 CB Word 1 (Source Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "S_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x610",
+		"Name": "6_DEST_AD",
+		"Description": "DMA Channel 6 CB Word 2 (Destination Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "D_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x614",
+		"Name": "6_TXFR_LEN",
+		"Description": "DMA Channel 6 CB Word 3 (Transfer Length)",
+		"Fields": [
+			{
+				"Bits": "31:30",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "29:16",
+				"Name": "YLENGTH",
+				"Type": "RW",
+				"Reset": "0x0000"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "XLENGTH",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0x618",
+		"Name": "6_STRIDE",
+		"Description": "DMA Channel 6 CB Word 4 (2D Stride)",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "D_STRIDE",
+				"Type": "RW",
+				"Reset": "0x0000"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "S_STRIDE",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0x61c",
+		"Name": "6_NEXTCONBK",
+		"Description": "DMA Channel 6 CB Word 5 (Next CB Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x620",
+		"Name": "6_DEBUG",
+		"Description": "DMA Channel 6 Debug",
+		"Fields": [
+			{
+				"Bits": "31:29",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "28",
+				"Name": "LITE",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "27:25",
+				"Name": "VERSION",
+				"Type": "RO",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "24:16",
+				"Name": "DMA_STATE",
+				"Type": "RO",
+				"Reset": "0x000"
+			},
+			{
+				"Bits": "15:8",
+				"Name": "DMA_ID",
+				"Type": "RO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "7:4",
+				"Name": "OUTSTANDING_WRITES",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "2",
+				"Name": "READ_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "FIFO_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "READ_LAST_NOT_SET_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x700",
+		"Name": "7_CS",
+		"Description": "DMA Lite Channel 7 Control and Status",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "RESET",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30",
+				"Name": "ABORT",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "29",
+				"Name": "DISDEBUG",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "28",
+				"Name": "WAIT_FOR_OUTS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "27:24",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "23:20",
+				"Name": "PANIC_PRIORITY",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "19:16",
+				"Name": "PRIORITY",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "15:9",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "8",
+				"Name": "ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "6",
+				"Name": "WAITING_FOR_OU",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "DREQ_STOPS_DM",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "PAUSED",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "DREQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "INT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "END",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "ACTIVE",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x704",
+		"Name": "7_CONBLK_AD",
+		"Description": "DMA Lite Channel 7 Control Block Address",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "SCB_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x708",
+		"Name": "7_TI",
+		"Description": "DMA Lite Channel 7 CB Word 0 (Transfer Information)",
+		"Fields": [
+			{
+				"Bits": "31:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25:21",
+				"Name": "WAITS",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "20:16",
+				"Name": "PERMAP",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "15:12",
+				"Name": "BURST_LENGTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "10",
+				"Name": "SRC_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "SRC_WIDTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "SRC_INC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "6",
+				"Name": "DEST_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "DEST_WIDTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "DEST_INC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "WAIT_RESP",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2:1",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "0",
+				"Name": "INTEN",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x70c",
+		"Name": "7_SOURCE_AD",
+		"Description": "DMA Lite Channel 7 CB Word 1 (Source Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "S_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x710",
+		"Name": "7_DEST_AD",
+		"Description": "DMA Lite Channel 7 CB Word 2 (Destination Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "D_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x714",
+		"Name": "7_TXFR_LEN",
+		"Description": "DMA Lite Channel 7 CB Word 3 (Transfer Length)",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "XLENGTH",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0x71c",
+		"Name": "7_NEXTCONBK",
+		"Description": "DMA Lite Channel 7 CB Word 5 (Next CB Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x720",
+		"Name": "7_DEBUG",
+		"Description": "DMA Lite Channel 7 Debug",
+		"Fields": [
+			{
+				"Bits": "31:29",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "28",
+				"Name": "LITE",
+				"Type": "RO",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "27:25",
+				"Name": "VERSION",
+				"Type": "RO",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "24:16",
+				"Name": "DMA_STATE",
+				"Type": "RO",
+				"Reset": "0x000"
+			},
+			{
+				"Bits": "15:8",
+				"Name": "DMA_ID",
+				"Type": "RO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "7:4",
+				"Name": "OUTSTANDING_WRITES",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "2",
+				"Name": "READ_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "FIFO_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "READ_LAST_NOT_SET_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x800",
+		"Name": "8_CS",
+		"Description": "DMA Lite Channel 8 Control and Status",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "RESET",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30",
+				"Name": "ABORT",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "29",
+				"Name": "DISDEBUG",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "28",
+				"Name": "WAIT_FOR_OUTS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "27:24",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "23:20",
+				"Name": "PANIC_PRIORITY",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "19:16",
+				"Name": "PRIORITY",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "15:9",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "8",
+				"Name": "ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "6",
+				"Name": "WAITING_FOR_OU",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "DREQ_STOPS_DM",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "PAUSED",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "DREQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "INT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "END",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "ACTIVE",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x804",
+		"Name": "8_CONBLK_AD",
+		"Description": "DMA Lite Channel 8 Control Block Address",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "SCB_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x808",
+		"Name": "8_TI",
+		"Description": "DMA Lite Channel 8 CB Word 0 (Transfer Information)",
+		"Fields": [
+			{
+				"Bits": "31:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25:21",
+				"Name": "WAITS",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "20:16",
+				"Name": "PERMAP",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "15:12",
+				"Name": "BURST_LENGTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "10",
+				"Name": "SRC_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "SRC_WIDTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "SRC_INC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "6",
+				"Name": "DEST_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "DEST_WIDTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "DEST_INC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "WAIT_RESP",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2:1",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "0",
+				"Name": "INTEN",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x80c",
+		"Name": "8_SOURCE_AD",
+		"Description": "DMA Lite Channel 8 CB Word 1 (Source Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "S_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x810",
+		"Name": "8_DEST_AD",
+		"Description": "DMA Lite Channel 8 CB Word 2 (Destination Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "D_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x814",
+		"Name": "8_TXFR_LEN",
+		"Description": "DMA Lite Channel 8 CB Word 3 (Transfer Length)",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "XLENGTH",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0x81c",
+		"Name": "8_NEXTCONBK",
+		"Description": "DMA Lite Channel 8 CB Word 5 (Next CB Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x820",
+		"Name": "8_DEBUG",
+		"Description": "DMA Lite Channel 8 Debug",
+		"Fields": [
+			{
+				"Bits": "31:29",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "28",
+				"Name": "LITE",
+				"Type": "RO",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "27:25",
+				"Name": "VERSION",
+				"Type": "RO",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "24:16",
+				"Name": "DMA_STATE",
+				"Type": "RO",
+				"Reset": "0x000"
+			},
+			{
+				"Bits": "15:8",
+				"Name": "DMA_ID",
+				"Type": "RO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "7:4",
+				"Name": "OUTSTANDING_WRITES",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "2",
+				"Name": "READ_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "FIFO_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "READ_LAST_NOT_SET_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x900",
+		"Name": "9_CS",
+		"Description": "DMA Lite Channel 9 Control and Status",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "RESET",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30",
+				"Name": "ABORT",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "29",
+				"Name": "DISDEBUG",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "28",
+				"Name": "WAIT_FOR_OUTS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "27:24",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "23:20",
+				"Name": "PANIC_PRIORITY",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "19:16",
+				"Name": "PRIORITY",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "15:9",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "8",
+				"Name": "ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "6",
+				"Name": "WAITING_FOR_OU",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "DREQ_STOPS_DM",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "PAUSED",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "DREQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "INT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "END",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "ACTIVE",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x904",
+		"Name": "9_CONBLK_AD",
+		"Description": "DMA Lite Channel 9 Control Block Address",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "SCB_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x908",
+		"Name": "9_TI",
+		"Description": "DMA Lite Channel 9 CB Word 0 (Transfer Information)",
+		"Fields": [
+			{
+				"Bits": "31:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25:21",
+				"Name": "WAITS",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "20:16",
+				"Name": "PERMAP",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "15:12",
+				"Name": "BURST_LENGTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "10",
+				"Name": "SRC_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "SRC_WIDTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "SRC_INC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "6",
+				"Name": "DEST_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "DEST_WIDTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "DEST_INC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "WAIT_RESP",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2:1",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "0",
+				"Name": "INTEN",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x90c",
+		"Name": "9_SOURCE_AD",
+		"Description": "DMA Lite Channel 9 CB Word 1 (Source Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "S_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x910",
+		"Name": "9_DEST_AD",
+		"Description": "DMA Lite Channel 9 CB Word 2 (Destination Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "D_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x914",
+		"Name": "9_TXFR_LEN",
+		"Description": "DMA Lite Channel 9 CB Word 3 (Transfer Length)",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "XLENGTH",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0x91c",
+		"Name": "9_NEXTCONBK",
+		"Description": "DMA Lite Channel 9 CB Word 5 (Next CB Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x920",
+		"Name": "9_DEBUG",
+		"Description": "DMA Lite Channel 9 Debug",
+		"Fields": [
+			{
+				"Bits": "31:29",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "28",
+				"Name": "LITE",
+				"Type": "RO",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "27:25",
+				"Name": "VERSION",
+				"Type": "RO",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "24:16",
+				"Name": "DMA_STATE",
+				"Type": "RO",
+				"Reset": "0x000"
+			},
+			{
+				"Bits": "15:8",
+				"Name": "DMA_ID",
+				"Type": "RO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "7:4",
+				"Name": "OUTSTANDING_WRITES",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "2",
+				"Name": "READ_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "FIFO_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "READ_LAST_NOT_SET_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0xa00",
+		"Name": "10_CS",
+		"Description": "DMA Lite Channel 10 Control and Status",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "RESET",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30",
+				"Name": "ABORT",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "29",
+				"Name": "DISDEBUG",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "28",
+				"Name": "WAIT_FOR_OUTS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "27:24",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "23:20",
+				"Name": "PANIC_PRIORITY",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "19:16",
+				"Name": "PRIORITY",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "15:9",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "8",
+				"Name": "ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "6",
+				"Name": "WAITING_FOR_OU",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "DREQ_STOPS_DM",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "PAUSED",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "DREQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "INT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "END",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "ACTIVE",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0xa04",
+		"Name": "10_CONBLK_AD",
+		"Description": "DMA Lite Channel 10 Control Block Address",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "SCB_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xa08",
+		"Name": "10_TI",
+		"Description": "DMA Lite Channel 10 CB Word 0 (Transfer Information)",
+		"Fields": [
+			{
+				"Bits": "31:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25:21",
+				"Name": "WAITS",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "20:16",
+				"Name": "PERMAP",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "15:12",
+				"Name": "BURST_LENGTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "10",
+				"Name": "SRC_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "SRC_WIDTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "SRC_INC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "6",
+				"Name": "DEST_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "DEST_WIDTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "DEST_INC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "WAIT_RESP",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2:1",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "0",
+				"Name": "INTEN",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0xa0c",
+		"Name": "10_SOURCE_AD",
+		"Description": "DMA Lite Channel 10 CB Word 1 (Source Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "S_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xa10",
+		"Name": "10_DEST_AD",
+		"Description": "DMA Lite Channel 10 CB Word 2 (Destination Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "D_ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xa14",
+		"Name": "10_TXFR_LEN",
+		"Description": "DMA Lite Channel 10 CB Word 3 (Transfer Length)",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "XLENGTH",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0xa1c",
+		"Name": "10_NEXTCONBK",
+		"Description": "DMA Lite Channel 10 CB Word 5 (Next CB Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xa20",
+		"Name": "10_DEBUG",
+		"Description": "DMA Lite Channel 10 Debug",
+		"Fields": [
+			{
+				"Bits": "31:29",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "28",
+				"Name": "LITE",
+				"Type": "RO",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "27:25",
+				"Name": "VERSION",
+				"Type": "RO",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "24:16",
+				"Name": "DMA_STATE",
+				"Type": "RO",
+				"Reset": "0x000"
+			},
+			{
+				"Bits": "15:8",
+				"Name": "DMA_ID",
+				"Type": "RO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "7:4",
+				"Name": "OUTSTANDING_WRITES",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "2",
+				"Name": "READ_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "FIFO_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "READ_LAST_NOT_SET_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0xb00",
+		"Name": "11_CS",
+		"Description": "DMA4 Channel 11 Control and Status",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "HALT",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30",
+				"Name": "ABORT",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "29",
+				"Name": "DISDEBUG",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "28",
+				"Name": "WAIT_FOR_OUTS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "27:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25",
+				"Name": "OUTSTANDING_T",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "24",
+				"Name": "DMA_BUSY",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23:20",
+				"Name": "PANIC_QOS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "19:16",
+				"Name": "QOS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "15:11",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "10",
+				"Name": "ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9:8",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "7",
+				"Name": "WAITING_FOR_OUTSTANDING_WRITES",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "DREQ_STOPS_DMA",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "WR_PAUSED",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "RD_PAUSED",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "DREQ",
+				"Type": "RO",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "2",
+				"Name": "INT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "END",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "ACTIVE",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0xb04",
+		"Name": "11_CB",
+		"Description": "DMA4 Channel 11 Control Block Address",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xb0c",
+		"Name": "11_DEBUG",
+		"Description": "DMA4 Channel 11 Debug",
+		"Fields": [
+			{
+				"Bits": "31:28",
+				"Name": "VERSION",
+				"Type": "RO",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "27:24",
+				"Name": "ID",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23",
+				"Name": "RESET",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "22",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "21:18",
+				"Name": "W_STATE",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "17:14",
+				"Name": "R_STATE",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "13:12",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "11",
+				"Name": "DISABLE_CLK_GA",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "ABORT_ON_ERRO",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "9",
+				"Name": "HALT_ON_ERROR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "INT_ON_ERROR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7:4",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "3",
+				"Name": "READ_CB_ERROR",
+				"Type": "RC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "READ_ERROR",
+				"Type": "RC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "FIFO_ERROR",
+				"Type": "RC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "WRITE_ERROR",
+				"Type": "RC",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0xb10",
+		"Name": "11_TI",
+		"Description": "DMA4 Channel 11 CB Word 0 (Transfer Information)",
+		"Fields": [
+			{
+				"Bits": "31:24",
+				"Name": "D_WAITS",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "23:16",
+				"Name": "S_WAITS",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "15",
+				"Name": "D_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14",
+				"Name": "S_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "13:09",
+				"Name": "PERMAP",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "8:4",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "3",
+				"Name": "WAIT_RD_RESP",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "WAIT_RESP",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "TDMODE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "INTEN",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0xb14",
+		"Name": "11_SRC",
+		"Description": "DMA4 Channel 11 CB Word 1 (Source Address [31:0])",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xb18",
+		"Name": "11_SRCI",
+		"Description": "DMA4 Channel 11 CB Word 2 (Source Address [40:32] and Info)",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "STRIDE",
+				"Type": "RW",
+				"Reset": "0x0000"
+			},
+			{
+				"Bits": "15",
+				"Name": "IGNORE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14:13",
+				"Name": "SIZE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "12",
+				"Name": "INC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11:08",
+				"Name": "BURST_LENGTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00"
+			}
+		]
+	},
+	{
+		"Offset": "0xb1c",
+		"Name": "11_DEST",
+		"Description": "DMA4 Channel 11 CB Word 3 (Destination Address[31:0])",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xb20",
+		"Name": "11_DESTI",
+		"Description": "DMA4 Channel 11 CB Word 4 (Destination Address[40:32] and Info)",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "STRIDE",
+				"Type": "RW",
+				"Reset": "0x0000"
+			},
+			{
+				"Bits": "15",
+				"Name": "IGNORE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14:13",
+				"Name": "SIZE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11:08",
+				"Name": "BURST_LENGTH",
+				"Type": "RW",
+				"Reset": "0x00"
+			}
+		]
+	},
+	{
+		"Offset": "0xb24",
+		"Name": "11_LEN",
+		"Description": "DMA4 Channel 11 CB Word 5 (Transfer Length)",
+		"Fields": [
+			{
+				"Bits": "31:30",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "29:16",
+				"Name": "YLENGTH",
+				"Type": "RW",
+				"Reset": "0x0000"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "XLENGTH",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0xb28",
+		"Name": "11_NEXT_CB",
+		"Description": "DMA4 Channel 11 CB Word 6 (Next CB Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xb2c",
+		"Name": "11_DEBUG2",
+		"Description": "DMA4 Channel 11 More Debug",
+		"Fields": [
+			{
+				"Bits": "31:25",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "24:16",
+				"Name": "OUTSTANDING_R",
+				"Type": "RO",
+				"Reset": "0x000"
+			},
+			{
+				"Bits": "15:9",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "8:0",
+				"Name": "OUTSTANDING_W",
+				"Type": "RO",
+				"Reset": "0x000"
+			}
+		]
+	},
+	{
+		"Offset": "0xc00",
+		"Name": "12_CS",
+		"Description": "DMA4 Channel 12 Control and Status",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "HALT",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30",
+				"Name": "ABORT",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "29",
+				"Name": "DISDEBUG",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "28",
+				"Name": "WAIT_FOR_OUTS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "27:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25",
+				"Name": "OUTSTANDING_T",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "24",
+				"Name": "DMA_BUSY",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23:20",
+				"Name": "PANIC_QOS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "19:16",
+				"Name": "QOS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "15:11",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "10",
+				"Name": "ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9:8",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "7",
+				"Name": "WAITING_FOR_OUTSTANDING_WRITES",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "DREQ_STOPS_DMA",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "WR_PAUSED",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "RD_PAUSED",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "DREQ",
+				"Type": "RO",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "2",
+				"Name": "INT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "END",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "ACTIVE",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0xc04",
+		"Name": "12_CB",
+		"Description": "DMA4 Channel 12 Control Block Address",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xc0c",
+		"Name": "12_DEBUG",
+		"Description": "DMA4 Channel 12 Debug",
+		"Fields": [
+			{
+				"Bits": "31:28",
+				"Name": "VERSION",
+				"Type": "RO",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "27:24",
+				"Name": "ID",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23",
+				"Name": "RESET",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "22",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "21:18",
+				"Name": "W_STATE",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "17:14",
+				"Name": "R_STATE",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "13:12",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "11",
+				"Name": "DISABLE_CLK_GA",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "ABORT_ON_ERRO",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "9",
+				"Name": "HALT_ON_ERROR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "INT_ON_ERROR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7:4",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "3",
+				"Name": "READ_CB_ERROR",
+				"Type": "RC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "READ_ERROR",
+				"Type": "RC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "FIFO_ERROR",
+				"Type": "RC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "WRITE_ERROR",
+				"Type": "RC",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0xc10",
+		"Name": "12_TI",
+		"Description": "DMA4 Channel 12 CB Word 0 (Transfer Information)",
+		"Fields": [
+			{
+				"Bits": "31:24",
+				"Name": "D_WAITS",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "23:16",
+				"Name": "S_WAITS",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "15",
+				"Name": "D_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14",
+				"Name": "S_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "13:09",
+				"Name": "PERMAP",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "8:4",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "3",
+				"Name": "WAIT_RD_RESP",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "WAIT_RESP",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "TDMODE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "INTEN",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0xc14",
+		"Name": "12_SRC",
+		"Description": "DMA4 Channel 12 CB Word 1 (Source Address [31:0])",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xc18",
+		"Name": "12_SRCI",
+		"Description": "DMA4 Channel 12 CB Word 2 (Source Address [40:32] and Info)",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "STRIDE",
+				"Type": "RW",
+				"Reset": "0x0000"
+			},
+			{
+				"Bits": "15",
+				"Name": "IGNORE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14:13",
+				"Name": "SIZE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "12",
+				"Name": "INC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11:08",
+				"Name": "BURST_LENGTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00"
+			}
+		]
+	},
+	{
+		"Offset": "0xc1c",
+		"Name": "12_DEST",
+		"Description": "DMA4 Channel 12 CB Word 3 (Destination Address[31:0])",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xc20",
+		"Name": "12_DESTI",
+		"Description": "DMA4 Channel 12 CB Word 4 (Destination Address[40:32] and Info)",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "STRIDE",
+				"Type": "RW",
+				"Reset": "0x0000"
+			},
+			{
+				"Bits": "15",
+				"Name": "IGNORE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14:13",
+				"Name": "SIZE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11:08",
+				"Name": "BURST_LENGTH",
+				"Type": "RW",
+				"Reset": "0x00"
+			}
+		]
+	},
+	{
+		"Offset": "0xc24",
+		"Name": "12_LEN",
+		"Description": "DMA4 Channel 12 CB Word 5 (Transfer Length)",
+		"Fields": [
+			{
+				"Bits": "31:30",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "29:16",
+				"Name": "YLENGTH",
+				"Type": "RW",
+				"Reset": "0x0000"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "XLENGTH",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0xc28",
+		"Name": "12_NEXT_CB",
+		"Description": "DMA4 Channel 12 CB Word 6 (Next CB Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xc2c",
+		"Name": "12_DEBUG2",
+		"Description": "DMA4 Channel 12 More Debug",
+		"Fields": [
+			{
+				"Bits": "31:25",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "24:16",
+				"Name": "OUTSTANDING_R",
+				"Type": "RO",
+				"Reset": "0x000"
+			},
+			{
+				"Bits": "15:9",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "8:0",
+				"Name": "OUTSTANDING_W",
+				"Type": "RO",
+				"Reset": "0x000"
+			}
+		]
+	},
+	{
+		"Offset": "0xd00",
+		"Name": "13_CS",
+		"Description": "DMA4 Channel 13 Control and Status",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "HALT",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30",
+				"Name": "ABORT",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "29",
+				"Name": "DISDEBUG",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "28",
+				"Name": "WAIT_FOR_OUTS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "27:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25",
+				"Name": "OUTSTANDING_T",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "24",
+				"Name": "DMA_BUSY",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23:20",
+				"Name": "PANIC_QOS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "19:16",
+				"Name": "QOS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "15:11",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "10",
+				"Name": "ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9:8",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "7",
+				"Name": "WAITING_FOR_OUTSTANDING_WRITES",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "DREQ_STOPS_DMA",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "WR_PAUSED",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "RD_PAUSED",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "DREQ",
+				"Type": "RO",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "2",
+				"Name": "INT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "END",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "ACTIVE",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0xd04",
+		"Name": "13_CB",
+		"Description": "DMA4 Channel 13 Control Block Address",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xd0c",
+		"Name": "13_DEBUG",
+		"Description": "DMA4 Channel 13 Debug",
+		"Fields": [
+			{
+				"Bits": "31:28",
+				"Name": "VERSION",
+				"Type": "RO",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "27:24",
+				"Name": "ID",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23",
+				"Name": "RESET",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "22",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "21:18",
+				"Name": "W_STATE",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "17:14",
+				"Name": "R_STATE",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "13:12",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "11",
+				"Name": "DISABLE_CLK_GA",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "ABORT_ON_ERRO",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "9",
+				"Name": "HALT_ON_ERROR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "INT_ON_ERROR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7:4",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "3",
+				"Name": "READ_CB_ERROR",
+				"Type": "RC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "READ_ERROR",
+				"Type": "RC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "FIFO_ERROR",
+				"Type": "RC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "WRITE_ERROR",
+				"Type": "RC",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0xd10",
+		"Name": "13_TI",
+		"Description": "DMA4 Channel 13 CB Word 0 (Transfer Information)",
+		"Fields": [
+			{
+				"Bits": "31:24",
+				"Name": "D_WAITS",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "23:16",
+				"Name": "S_WAITS",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "15",
+				"Name": "D_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14",
+				"Name": "S_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "13:09",
+				"Name": "PERMAP",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "8:4",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "3",
+				"Name": "WAIT_RD_RESP",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "WAIT_RESP",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "TDMODE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "INTEN",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0xd14",
+		"Name": "13_SRC",
+		"Description": "DMA4 Channel 13 CB Word 1 (Source Address [31:0])",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xd18",
+		"Name": "13_SRCI",
+		"Description": "DMA4 Channel 13 CB Word 2 (Source Address [40:32] and Info)",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "STRIDE",
+				"Type": "RW",
+				"Reset": "0x0000"
+			},
+			{
+				"Bits": "15",
+				"Name": "IGNORE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14:13",
+				"Name": "SIZE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "12",
+				"Name": "INC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11:08",
+				"Name": "BURST_LENGTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00"
+			}
+		]
+	},
+	{
+		"Offset": "0xd1c",
+		"Name": "13_DEST",
+		"Description": "DMA4 Channel 13 CB Word 3 (Destination Address[31:0])",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xd20",
+		"Name": "13_DESTI",
+		"Description": "DMA4 Channel 13 CB Word 4 (Destination Address[40:32] and Info)",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "STRIDE",
+				"Type": "RW",
+				"Reset": "0x0000"
+			},
+			{
+				"Bits": "15",
+				"Name": "IGNORE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14:13",
+				"Name": "SIZE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11:08",
+				"Name": "BURST_LENGTH",
+				"Type": "RW",
+				"Reset": "0x00"
+			}
+		]
+	},
+	{
+		"Offset": "0xd24",
+		"Name": "13_LEN",
+		"Description": "DMA4 Channel 13 CB Word 5 (Transfer Length)",
+		"Fields": [
+			{
+				"Bits": "31:30",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "29:16",
+				"Name": "YLENGTH",
+				"Type": "RW",
+				"Reset": "0x0000"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "XLENGTH",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0xd28",
+		"Name": "13_NEXT_CB",
+		"Description": "DMA4 Channel 13 CB Word 6 (Next CB Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xd2c",
+		"Name": "13_DEBUG2",
+		"Description": "DMA4 Channel 13 More Debug",
+		"Fields": [
+			{
+				"Bits": "31:25",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "24:16",
+				"Name": "OUTSTANDING_R",
+				"Type": "RO",
+				"Reset": "0x000"
+			},
+			{
+				"Bits": "15:9",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "8:0",
+				"Name": "OUTSTANDING_W",
+				"Type": "RO",
+				"Reset": "0x000"
+			}
+		]
+	},
+	{
+		"Offset": "0xe00",
+		"Name": "14_CS",
+		"Description": "DMA4 Channel 14 Control and Status",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "HALT",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30",
+				"Name": "ABORT",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "29",
+				"Name": "DISDEBUG",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "28",
+				"Name": "WAIT_FOR_OUTS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "27:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25",
+				"Name": "OUTSTANDING_T",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "24",
+				"Name": "DMA_BUSY",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23:20",
+				"Name": "PANIC_QOS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "19:16",
+				"Name": "QOS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "15:11",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "10",
+				"Name": "ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9:8",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "7",
+				"Name": "WAITING_FOR_OUTSTANDING_WRITES",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "DREQ_STOPS_DMA",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "WR_PAUSED",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "RD_PAUSED",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "DREQ",
+				"Type": "RO",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "2",
+				"Name": "INT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "END",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "ACTIVE",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0xe04",
+		"Name": "14_CB",
+		"Description": "DMA4 Channel 14 Control Block Address",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xe0c",
+		"Name": "14_DEBUG",
+		"Description": "DMA4 Channel 14 Debug",
+		"Fields": [
+			{
+				"Bits": "31:28",
+				"Name": "VERSION",
+				"Type": "RO",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "27:24",
+				"Name": "ID",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23",
+				"Name": "RESET",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "22",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "21:18",
+				"Name": "W_STATE",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "17:14",
+				"Name": "R_STATE",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "13:12",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "11",
+				"Name": "DISABLE_CLK_GA",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "ABORT_ON_ERRO",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "9",
+				"Name": "HALT_ON_ERROR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "INT_ON_ERROR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7:4",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "3",
+				"Name": "READ_CB_ERROR",
+				"Type": "RC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "READ_ERROR",
+				"Type": "RC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "FIFO_ERROR",
+				"Type": "RC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "WRITE_ERROR",
+				"Type": "RC",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0xe10",
+		"Name": "14_TI",
+		"Description": "DMA4 Channel 14 CB Word 0 (Transfer Information)",
+		"Fields": [
+			{
+				"Bits": "31:24",
+				"Name": "D_WAITS",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "23:16",
+				"Name": "S_WAITS",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "15",
+				"Name": "D_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14",
+				"Name": "S_DREQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "13:09",
+				"Name": "PERMAP",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "8:4",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "3",
+				"Name": "WAIT_RD_RESP",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "WAIT_RESP",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "TDMODE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "INTEN",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0xe14",
+		"Name": "14_SRC",
+		"Description": "DMA4 Channel 14 CB Word 1 (Source Address [31:0])",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xe18",
+		"Name": "14_SRCI",
+		"Description": "DMA4 Channel 14 CB Word 2 (Source Address [40:32] and Info)",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "STRIDE",
+				"Type": "RW",
+				"Reset": "0x0000"
+			},
+			{
+				"Bits": "15",
+				"Name": "IGNORE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14:13",
+				"Name": "SIZE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "12",
+				"Name": "INC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11:08",
+				"Name": "BURST_LENGTH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00"
+			}
+		]
+	},
+	{
+		"Offset": "0xe1c",
+		"Name": "14_DEST",
+		"Description": "DMA4 Channel 14 CB Word 3 (Destination Address[31:0])",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xe20",
+		"Name": "14_DESTI",
+		"Description": "DMA4 Channel 14 CB Word 4 (Destination Address[40:32] and Info)",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "STRIDE",
+				"Type": "RW",
+				"Reset": "0x0000"
+			},
+			{
+				"Bits": "15",
+				"Name": "IGNORE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14:13",
+				"Name": "SIZE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11:08",
+				"Name": "BURST_LENGTH",
+				"Type": "RW",
+				"Reset": "0x00"
+			}
+		]
+	},
+	{
+		"Offset": "0xe24",
+		"Name": "14_LEN",
+		"Description": "DMA4 Channel 14 CB Word 5 (Transfer Length)",
+		"Fields": [
+			{
+				"Bits": "31:30",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "29:16",
+				"Name": "YLENGTH",
+				"Type": "RW",
+				"Reset": "0x0000"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "XLENGTH",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0xe28",
+		"Name": "14_NEXT_CB",
+		"Description": "DMA4 Channel 14 CB Word 6 (Next CB Address)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ADDR",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xe2c",
+		"Name": "14_DEBUG2",
+		"Description": "DMA4 Channel 14 More Debug",
+		"Fields": [
+			{
+				"Bits": "31:25",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "24:16",
+				"Name": "OUTSTANDING_R",
+				"Type": "RO",
+				"Reset": "0x000"
+			},
+			{
+				"Bits": "15:9",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "8:0",
+				"Name": "OUTSTANDING_W",
+				"Type": "RO",
+				"Reset": "0x000"
+			}
+		]
+	},
+	{
+		"Offset": "0xfe0",
+		"Name": "INT_STATUS",
+		"Description": "Interrupt status of each DMA channel",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15",
+				"Name": "INT15",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14",
+				"Name": "INT14",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "13",
+				"Name": "INT13",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "12",
+				"Name": "INT12",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11",
+				"Name": "INT11",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "INT10",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "INT9",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "INT8",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "INT7",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "INT6",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "INT5",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "INT4",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "INT3",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "INT2",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "INT1",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "INT0",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0xff0",
+		"Name": "ENABLE",
+		"Description": "Global enable bits for each DMA channel",
+		"Fields": [
+			{
+				"Bits": "31:28",
+				"Name": "PAGELITE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "27:24",
+				"Name": "PAGE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23:15",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "14",
+				"Name": "EN14",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "13",
+				"Name": "EN13",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "12",
+				"Name": "EN12",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "11",
+				"Name": "EN11",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "10",
+				"Name": "EN10",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "9",
+				"Name": "EN9",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "8",
+				"Name": "EN8",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "7",
+				"Name": "EN7",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "6",
+				"Name": "EN6",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "5",
+				"Name": "EN5",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "4",
+				"Name": "EN4",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "3",
+				"Name": "EN3",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "2",
+				"Name": "EN2",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "1",
+				"Name": "EN1",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "0",
+				"Name": "EN0",
+				"Type": "RW",
+				"Reset": "0x1"
+			}
+		]
+	}
+]

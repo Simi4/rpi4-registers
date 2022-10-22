@@ -1,0 +1,209 @@
+[
+	{
+		"Offset": "0x400",
+		"Name": "LOAD",
+		"Description": "Load",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "LOAD",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x404",
+		"Name": "VALUE",
+		"Description": "Value (Read-Only)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "VALUE",
+				"Type": "RO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x408",
+		"Name": "CONTROL",
+		"Description": "Control",
+		"Fields": [
+			{
+				"Bits": "31:24",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "23:16",
+				"Name": "FREEDIV",
+				"Type": "RW",
+				"Reset": "0x3e"
+			},
+			{
+				"Bits": "15:10",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "9",
+				"Name": "ENAFREE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "DBGHALT",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "ENABLE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "5",
+				"Name": "IE",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "4",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "3:2",
+				"Name": "DIV",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "32BIT",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			}
+		]
+	},
+	{
+		"Offset": "0x40c",
+		"Name": "IRQCNTL",
+		"Description": "IRQ Clear/Ack (Write-Only)",
+		"Fields": [
+			{
+				"Bits": "31:1",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "0",
+				"Name": "INT",
+				"Type": "WO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x410",
+		"Name": "RAWIRQ",
+		"Description": "RAW IRQ (Read-Only)",
+		"Fields": [
+			{
+				"Bits": "31:1",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "0",
+				"Name": "INT",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x414",
+		"Name": "MSKIRQ",
+		"Description": "Masked IRQ (Read-Only)",
+		"Fields": [
+			{
+				"Bits": "31:1",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "0",
+				"Name": "INT",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x418",
+		"Name": "RELOAD",
+		"Description": "Reload",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "LOAD",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x41c",
+		"Name": "PREDIV",
+		"Description": "Pre-divider (Not in real 804!)",
+		"Fields": [
+			{
+				"Bits": "31:10",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "9:0",
+				"Name": "PREDIV",
+				"Type": "RW",
+				"Reset": "0x07d"
+			}
+		]
+	},
+	{
+		"Offset": "0x420",
+		"Name": "FREECNT",
+		"Description": "Free running counter (Not in real 804!)",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "FREECNT",
+				"Type": "RO",
+				"Reset": "0x00000000"
+			}
+		]
+	}
+]

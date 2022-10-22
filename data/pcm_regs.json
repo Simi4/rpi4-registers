@@ -1,0 +1,527 @@
+[
+	{
+		"Offset": "0x00",
+		"Name": "CS_A",
+		"Description": "PCM Control and Status",
+		"Fields": [
+			{
+				"Bits": "31:25",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "24",
+				"Name": "SYNC",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23",
+				"Name": "RXSEX",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "22",
+				"Name": "RXF",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "21",
+				"Name": "TXE",
+				"Type": "RO",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "20",
+				"Name": "RXD",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "19",
+				"Name": "TXD",
+				"Type": "RO",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "18",
+				"Name": "RXR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "17",
+				"Name": "TXW",
+				"Type": "RO",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "16",
+				"Name": "RXERR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "15",
+				"Name": "TXERR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14",
+				"Name": "RXSYNC",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "13",
+				"Name": "TXSYNC",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "12:10",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "9",
+				"Name": "DMAEN",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8:7",
+				"Name": "RXTHR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6:5",
+				"Name": "TXTHR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "RXCLR",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "TXCLR",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "TXON",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "RXON",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "EN",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x04",
+		"Name": "FIFO_A",
+		"Description": "PCM FIFO Data",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "FIFO",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x08",
+		"Name": "MODE_A",
+		"Description": "PCM Mode",
+		"Fields": [
+			{
+				"Bits": "31:29",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "28",
+				"Name": "CLK_DIS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "27",
+				"Name": "PDMN",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "26",
+				"Name": "PDME",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "25",
+				"Name": "FRXP",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "24",
+				"Name": "FTXP",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23",
+				"Name": "CLKM",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "22",
+				"Name": "CLKI",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "21",
+				"Name": "FSM",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "20",
+				"Name": "FSI",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "19:10",
+				"Name": "FLEN",
+				"Type": "RW",
+				"Reset": "0x000"
+			},
+			{
+				"Bits": "9:0",
+				"Name": "FSLEN",
+				"Type": "RW",
+				"Reset": "0x000"
+			}
+		]
+	},
+	{
+		"Offset": "0x0c",
+		"Name": "RXC_A",
+		"Description": "PCM Receive Configuration",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "CH1WEX",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30",
+				"Name": "CH1EN",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "29:20",
+				"Name": "CH1POS",
+				"Type": "RW",
+				"Reset": "0x000"
+			},
+			{
+				"Bits": "19:16",
+				"Name": "CH1WID",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "15",
+				"Name": "CH2WEX",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14",
+				"Name": "CH2EN",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "13:4",
+				"Name": "CH2POS",
+				"Type": "RW",
+				"Reset": "0x000"
+			},
+			{
+				"Bits": "3:0",
+				"Name": "CH2WID",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x10",
+		"Name": "TXC_A",
+		"Description": "PCM Transmit Configuration",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "CH1WEX",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30",
+				"Name": "CH1EN",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "29:20",
+				"Name": "CH1POS",
+				"Type": "RW",
+				"Reset": "0x000"
+			},
+			{
+				"Bits": "19:16",
+				"Name": "CH1WID",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "15",
+				"Name": "CH2WEX",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14",
+				"Name": "CH2EN",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "13:4",
+				"Name": "CH2POS",
+				"Type": "RW",
+				"Reset": "0x000"
+			},
+			{
+				"Bits": "3:0",
+				"Name": "CH2WID",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x14",
+		"Name": "DREQ_A",
+		"Description": "PCM DMA Request Level",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "30:24",
+				"Name": "TX_PANIC",
+				"Type": "RW",
+				"Reset": "0x10"
+			},
+			{
+				"Bits": "23",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "22:16",
+				"Name": "RX_PANIC",
+				"Type": "RW",
+				"Reset": "0x30"
+			},
+			{
+				"Bits": "15",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "14:8",
+				"Name": "TX_REQ",
+				"Type": "RW",
+				"Reset": "0x30"
+			},
+			{
+				"Bits": "7",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "6:0",
+				"Name": "RX_REQ",
+				"Type": "RW",
+				"Reset": "0x20"
+			}
+		]
+	},
+	{
+		"Offset": "0x18",
+		"Name": "INTEN_A",
+		"Description": "PCM Interrupt Enables",
+		"Fields": [
+			{
+				"Bits": "31:4",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "3",
+				"Name": "RXERR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "TXERR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "RXR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "TXW",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x1c",
+		"Name": "INTSTC_A",
+		"Description": "PCM Interrupt Status & Clear",
+		"Fields": [
+			{
+				"Bits": "31:4",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "3",
+				"Name": "RXERR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "TXERR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "RXR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "TXW",
+				"Type": "W1C",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x20",
+		"Name": "GRAY",
+		"Description": "PCM Gray Mode Control",
+		"Fields": [
+			{
+				"Bits": "31:22",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "21:16",
+				"Name": "RXFIFOLEVEL",
+				"Type": "RO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "15:10",
+				"Name": "FLUSHED",
+				"Type": "RO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "9:4",
+				"Name": "RXLEVEL",
+				"Type": "RO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "3",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "2",
+				"Name": "FLUSH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "CLR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "EN",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	}
+]

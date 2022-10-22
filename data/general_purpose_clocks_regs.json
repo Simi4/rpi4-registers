@@ -1,0 +1,260 @@
+[
+	{
+		"Offset": "0x70",
+		"Name": "CM_GP0CTL",
+		"Description": "Clock Manager General Purpose Clocks Control",
+		"Fields": [
+			{
+				"Bits": "31:24",
+				"Name": "PASSWD",
+				"Type": "WO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "23:11",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "10:9",
+				"Name": "MASH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "FLIP",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "BUSY",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "5",
+				"Name": "KILL",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "ENAB",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3:0",
+				"Name": "SRC",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x74",
+		"Name": "CM_GP0DIV",
+		"Description": "Clock Manager General Purpose Clock Divisors",
+		"Fields": [
+			{
+				"Bits": "31:24",
+				"Name": "PASSWD",
+				"Type": "WO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "23:12",
+				"Name": "DIVI",
+				"Type": "RW",
+				"Reset": "0x000"
+			},
+			{
+				"Bits": "11:0",
+				"Name": "DIVF",
+				"Type": "RW",
+				"Reset": "0x000"
+			}
+		]
+	},
+	{
+		"Offset": "0x78",
+		"Name": "CM_GP1CTL",
+		"Description": "Clock Manager General Purpose Clocks Control",
+		"Fields": [
+			{
+				"Bits": "31:24",
+				"Name": "PASSWD",
+				"Type": "WO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "23:11",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "10:9",
+				"Name": "MASH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "FLIP",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "BUSY",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "5",
+				"Name": "KILL",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "ENAB",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3:0",
+				"Name": "SRC",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x7c",
+		"Name": "CM_GP1DIV",
+		"Description": "Clock Manager General Purpose Clock Divisors",
+		"Fields": [
+			{
+				"Bits": "31:24",
+				"Name": "PASSWD",
+				"Type": "WO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "23:12",
+				"Name": "DIVI",
+				"Type": "RW",
+				"Reset": "0x000"
+			},
+			{
+				"Bits": "11:0",
+				"Name": "DIVF",
+				"Type": "RW",
+				"Reset": "0x000"
+			}
+		]
+	},
+	{
+		"Offset": "0x80",
+		"Name": "CM_GP2CTL",
+		"Description": "Clock Manager General Purpose Clocks Control",
+		"Fields": [
+			{
+				"Bits": "31:24",
+				"Name": "PASSWD",
+				"Type": "WO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "23:11",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "10:9",
+				"Name": "MASH",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "FLIP",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "BUSY",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "5",
+				"Name": "KILL",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "ENAB",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3:0",
+				"Name": "SRC",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x84",
+		"Name": "CM_GP2DIV",
+		"Description": "Clock Manager General Purpose Clock Divisors",
+		"Fields": [
+			{
+				"Bits": "31:24",
+				"Name": "PASSWD",
+				"Type": "WO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "23:12",
+				"Name": "DIVI",
+				"Type": "RW",
+				"Reset": "0x000"
+			},
+			{
+				"Bits": "11:0",
+				"Name": "DIVF",
+				"Type": "RW",
+				"Reset": "0x000"
+			}
+		]
+	}
+]

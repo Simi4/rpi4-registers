@@ -1,0 +1,280 @@
+[
+	{
+		"Offset": "0x00",
+		"Name": "CTL",
+		"Description": "PWM Control",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15",
+				"Name": "MSEN2",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "13",
+				"Name": "USEF2",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "12",
+				"Name": "POLA2",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11",
+				"Name": "SBIT2",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "RPTL2",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "MODE2",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "PWEN2",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "MSEN1",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "CLRF",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "USEF1",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "POLA1",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "SBIT1",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "RPTL1",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "MODE1",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "PWEN1",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x04",
+		"Name": "STA",
+		"Description": "PWM Status",
+		"Fields": [
+			{
+				"Bits": "31:11",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "10",
+				"Name": "STA2",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "STA1",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "BERR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7:6",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "5",
+				"Name": "GAPO2",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "GAPO1",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "RERR1",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "WERR1",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "EMPT1",
+				"Type": "RO",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "0",
+				"Name": "FULL1",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x08",
+		"Name": "DMAC",
+		"Description": "PWM DMA Configuration",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "ENAB",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:8",
+				"Name": "PANIC",
+				"Type": "RW",
+				"Reset": "0x07"
+			},
+			{
+				"Bits": "7:0",
+				"Name": "DREQ",
+				"Type": "RW",
+				"Reset": "0x07"
+			}
+		]
+	},
+	{
+		"Offset": "0x10",
+		"Name": "RNG1",
+		"Description": "PWM Channel 1 Range",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "PWM_RNGi",
+				"Type": "RW",
+				"Reset": "0x00000020"
+			}
+		]
+	},
+	{
+		"Offset": "0x14",
+		"Name": "DAT1",
+		"Description": "PWM Channel 1 Data",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "PWM_DATi",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x18",
+		"Name": "FIF1",
+		"Description": "PWM FIFO Input",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "PWM_FIFO",
+				"Type": "WO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x20",
+		"Name": "RNG2",
+		"Description": "PWM Channel 2 Range",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "PWM_RNGi",
+				"Type": "RW",
+				"Reset": "0x00000020"
+			}
+		]
+	},
+	{
+		"Offset": "0x24",
+		"Name": "DAT2",
+		"Description": "PWM Channel 2 Data",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "PWM_DATi",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	}
+]

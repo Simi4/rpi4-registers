@@ -1,0 +1,260 @@
+[
+	{
+		"Offset": "0x00",
+		"Name": "CS",
+		"Description": "SPI Master Control and Status",
+		"Fields": [
+			{
+				"Bits": "31:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25",
+				"Name": "LEN_LONG",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "24",
+				"Name": "DMA_LEN",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23",
+				"Name": "CSPOL2",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "22",
+				"Name": "CSPOL1",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "21",
+				"Name": "CSPOL0",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "20",
+				"Name": "RXF",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "19",
+				"Name": "RXR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "18",
+				"Name": "TXD",
+				"Type": "RO",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "17",
+				"Name": "RXD",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "16",
+				"Name": "DONE",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "15",
+				"Name": "TE_EN",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14",
+				"Name": "LMONO",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "13",
+				"Name": "LEN",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "12",
+				"Name": "REN",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "11",
+				"Name": "ADCS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "INTR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "INTD",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "DMAEN",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "TA",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "CSPOL",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5:4",
+				"Name": "CLEAR",
+				"Type": "W1SC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "CPOL",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "CPHA",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1:0",
+				"Name": "CS",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x04",
+		"Name": "FIFO",
+		"Description": "SPI Master TX and RX FIFOs",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "DATA",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x08",
+		"Name": "CLK",
+		"Description": "SPI Master Clock Divider",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "CDIV",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0x0c",
+		"Name": "DLEN",
+		"Description": "SPI Master Data Length",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "LEN",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0x10",
+		"Name": "LTOH",
+		"Description": "SPI LoSSI mode TOH",
+		"Fields": [
+			{
+				"Bits": "31:4",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "3:0",
+				"Name": "TOH",
+				"Type": "RW",
+				"Reset": "0x1"
+			}
+		]
+	},
+	{
+		"Offset": "0x14",
+		"Name": "DC",
+		"Description": "SPI DMA DREQ Controls",
+		"Fields": [
+			{
+				"Bits": "31:24",
+				"Name": "RPANIC",
+				"Type": "RW",
+				"Reset": "0x30"
+			},
+			{
+				"Bits": "23:16",
+				"Name": "RDREQ",
+				"Type": "RW",
+				"Reset": "0x20"
+			},
+			{
+				"Bits": "15:8",
+				"Name": "TPANIC",
+				"Type": "RW",
+				"Reset": "0x10"
+			},
+			{
+				"Bits": "7:0",
+				"Name": "TDREQ",
+				"Type": "RW",
+				"Reset": "0x20"
+			}
+		]
+	}
+]

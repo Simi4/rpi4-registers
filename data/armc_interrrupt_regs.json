@@ -1,0 +1,2659 @@
+[
+	{
+		"Offset": "0x200",
+		"Name": "IRQ0_PENDING0",
+		"Description": "ARM Core 0 IRQ Enabled Interrupt Pending bits [31:0]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_31_0",
+				"Type": "RO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x204",
+		"Name": "IRQ0_PENDING1",
+		"Description": "ARM Core 0 IRQ Enabled Interrupt pending bits [63:32]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_63_32",
+				"Type": "RO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x208",
+		"Name": "IRQ0_PENDING2",
+		"Description": "ARM Core 0 IRQ Enabled Interrupt pending bits [79:64]",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25",
+				"Name": "INT63_32",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "24",
+				"Name": "INT31_0",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:08",
+				"Name": "SW_TRIG_INT",
+				"Type": "RO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "07",
+				"Name": "ARM_AXI_ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "ARM_ADDR_ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "VPU_C1_HALT",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "VPU_C0_C1_HALT",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "BELL_IRQ1",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "BELL_IRQ0",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MAILBOX_IRQ0",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "TIMER_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x210",
+		"Name": "IRQ0_SET_EN_0",
+		"Description": "Write to Set ARM Core 0 IRQ enable bits [31:0]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_31_0",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x214",
+		"Name": "IRQ0_SET_EN_1",
+		"Description": "Write to Set ARM Core 0 IRQ enable bits [63:32]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_63_32",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x218",
+		"Name": "IRQ0_SET_EN_2",
+		"Description": "Write to Set ARM Core 0 IRQ enable bits[79:64]",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:08",
+				"Name": "SW_TRIG_INT",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "07",
+				"Name": "ARM_AXI_ERROR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "ARM_ADDR_ERROR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "VPU_C1_HALT",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "VPU_C0_C1_HALT",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "BELL_IRQ1",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "BELL_IRQ0",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MAILBOX_IRQ0",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "TIMER_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x220",
+		"Name": "IRQ0_CLR_EN_0",
+		"Description": "Write to Clear ARM Core 0 IRQ enable bits [31:0]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_31_0",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x224",
+		"Name": "IRQ0_CLR_EN_1",
+		"Description": "Write to Clear ARM Core 0 IRQ enable bits [63:32]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_63_32",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x228",
+		"Name": "IRQ0_CLR_EN_2",
+		"Description": "Write to Clear ARM Core 0 IRQ enable bits [79:64]",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "IRQ",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:08",
+				"Name": "SW_TRIG_INT",
+				"Type": "W1C",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "07",
+				"Name": "ARM_AXI_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "ARM_ADDR_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "VPU_C1_HALT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "VPU_C0_C1_HALT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "BELL_IRQ1",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "BELL_IRQ0",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MAILBOX_IRQ0",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "TIMER_IRQ",
+				"Type": "W1C",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x230",
+		"Name": "IRQ_STATUS0",
+		"Description": "Interrupt Line bits [31:0]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_31_0",
+				"Type": "RO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x234",
+		"Name": "IRQ_STATUS1",
+		"Description": "Interrupt Line bits [63:32]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_63_32",
+				"Type": "RO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x238",
+		"Name": "IRQ_STATUS2",
+		"Description": "Interrupt Line bits [79:64]",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:08",
+				"Name": "SW_TRIG_INT",
+				"Type": "RO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "07",
+				"Name": "ARM_AXI_ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "ARM_ADDR_ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "VPU_C1_HALT",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "VPU_C0_C1_HALT",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "BELL_IRQ1",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "BELL_IRQ0",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MAILBOX_IRQ0",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "TIMER_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x240",
+		"Name": "IRQ1_PENDING0",
+		"Description": "ARM Core 1 IRQ Enabled Interrupt pending bits [31:0]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_31_0",
+				"Type": "RO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x244",
+		"Name": "IRQ1_PENDING1",
+		"Description": "ARM Core 1 IRQ Enabled Interrupt pending bits [63:32]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_63_32",
+				"Type": "RO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x248",
+		"Name": "IRQ1_PENDING2",
+		"Description": "ARM Core 1 IRQ Enabled Interrupt pending bits [79:64]",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25",
+				"Name": "INT63_32",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "24",
+				"Name": "INT31_0",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:08",
+				"Name": "SW_TRIG_INT",
+				"Type": "RO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "07",
+				"Name": "ARM_AXI_ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "ARM_ADDR_ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "VPU_C1_HALT",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "VPU_C0_C1_HALT",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "BELL_IRQ1",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "BELL_IRQ0",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MAILBOX_IRQ0",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "TIMER_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x250",
+		"Name": "IRQ1_SET_EN_0",
+		"Description": "Write to Set ARM Core 1 IRQ enable bits [31:0]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_31_0",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x254",
+		"Name": "IRQ1_SET_EN_1",
+		"Description": "Write to Set ARM Core 1 IRQ enable bits [63:32]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_63_32",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x258",
+		"Name": "IRQ1_SET_EN_2",
+		"Description": "Write to Set ARM Core 1 IRQ enable bits[79:64]",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:08",
+				"Name": "SW_TRIG_INT",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "07",
+				"Name": "ARM_AXI_ERROR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "ARM_ADDR_ERROR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "VPU_C1_HALT",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "VPU_C0_C1_HALT",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "BELL_IRQ1",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "BELL_IRQ0",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MAILBOX_IRQ0",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "TIMER_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x260",
+		"Name": "IRQ1_CLR_EN_0",
+		"Description": "Write to Clear ARM Core 1 IRQ enable bits [31:0]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_31_0",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x264",
+		"Name": "IRQ1_CLR_EN_1",
+		"Description": "Write to Clear ARM Core 1 IRQ enable bits [63:32]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_63_32",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x268",
+		"Name": "IRQ1_CLR_EN_2",
+		"Description": "Write to Clear ARM Core 1 IRQ enable bits [79:64]",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "IRQ",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:08",
+				"Name": "SW_TRIG_INT",
+				"Type": "W1C",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "07",
+				"Name": "ARM_AXI_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "ARM_ADDR_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "VPU_C1_HALT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "VPU_C0_C1_HALT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "BELL_IRQ1",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "BELL_IRQ0",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MAILBOX_IRQ0",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "TIMER_IRQ",
+				"Type": "W1C",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x280",
+		"Name": "IRQ2_PENDING0",
+		"Description": "ARM Core 2 IRQ Enabled Interrupt pending bits [31:0]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_31_0",
+				"Type": "RO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x284",
+		"Name": "IRQ2_PENDING1",
+		"Description": "ARM Core 2 IRQ Enabled Interrupt pending bits [63:32]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_63_32",
+				"Type": "RO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x288",
+		"Name": "IRQ2_PENDING2",
+		"Description": "ARM Core 2 IRQ Enabled Interrupt pending bits [79:64]",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25",
+				"Name": "INT63_32",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "24",
+				"Name": "INT31_0",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:08",
+				"Name": "SW_TRIG_INT",
+				"Type": "RO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "07",
+				"Name": "ARM_AXI_ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "ARM_ADDR_ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "VPU_C1_HALT",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "VPU_C0_C1_HALT",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "BELL_IRQ1",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "BELL_IRQ0",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MAILBOX_IRQ0",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "TIMER_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x290",
+		"Name": "IRQ2_SET_EN_0",
+		"Description": "Write to Set ARM Core 2 IRQ enable bits [31:0]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_31_0",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x294",
+		"Name": "IRQ2_SET_EN_1",
+		"Description": "Write to Set ARM Core 2 IRQ enable bits [63:32]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_63_32",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x298",
+		"Name": "IRQ2_SET_EN_2",
+		"Description": "Write to Set ARM Core 2 IRQ enable bits[79:64]",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:08",
+				"Name": "SW_TRIG_INT",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "07",
+				"Name": "ARM_AXI_ERROR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "ARM_ADDR_ERROR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "VPU_C1_HALT",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "VPU_C0_C1_HALT",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "BELL_IRQ1",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "BELL_IRQ0",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MAILBOX_IRQ0",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "TIMER_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x2a0",
+		"Name": "IRQ2_CLR_EN_0",
+		"Description": "Write to Clear ARM Core 2 IRQ enable bits [31:0]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_31_0",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x2a4",
+		"Name": "IRQ2_CLR_EN_1",
+		"Description": "Write to Clear ARM Core 2 IRQ enable bits [63:32]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_63_32",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x2a8",
+		"Name": "IRQ2_CLR_EN_2",
+		"Description": "Write to Clear ARM Core 2 IRQ enable bits [79:64]",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "IRQ",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:08",
+				"Name": "SW_TRIG_INT",
+				"Type": "W1C",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "07",
+				"Name": "ARM_AXI_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "ARM_ADDR_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "VPU_C1_HALT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "VPU_C0_C1_HALT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "BELL_IRQ1",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "BELL_IRQ0",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MAILBOX_IRQ0",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "TIMER_IRQ",
+				"Type": "W1C",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x2c0",
+		"Name": "IRQ3_PENDING0",
+		"Description": "ARM Core 3 IRQ Enabled Interrupt pending bits [31:0]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_31_0",
+				"Type": "RO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x2c4",
+		"Name": "IRQ3_PENDING1",
+		"Description": "ARM Core 3 IRQ Enabled Interrupt pending bits [63:32]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_63_32",
+				"Type": "RO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x2c8",
+		"Name": "IRQ3_PENDING2",
+		"Description": "ARM Core 3 IRQ Enabled Interrupt pending bits [79:64]",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25",
+				"Name": "INT63_32",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "24",
+				"Name": "INT31_0",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:08",
+				"Name": "SW_TRIG_INT",
+				"Type": "RO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "07",
+				"Name": "ARM_AXI_ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "ARM_ADDR_ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "VPU_C1_HALT",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "VPU_C0_C1_HALT",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "BELL_IRQ1",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "BELL_IRQ0",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MAILBOX_IRQ0",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "TIMER_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x2d0",
+		"Name": "IRQ3_SET_EN_0",
+		"Description": "Write to Set ARM Core 3 IRQ enable bits [31:0]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_31_0",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x2d4",
+		"Name": "IRQ3_SET_EN_1",
+		"Description": "Write to Set ARM Core 3 IRQ enable bits [63:32]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_63_32",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x2d8",
+		"Name": "IRQ3_SET_EN_2",
+		"Description": "Write to Set ARM Core 3 IRQ enable bits[79:64]",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:08",
+				"Name": "SW_TRIG_INT",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "07",
+				"Name": "ARM_AXI_ERROR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "ARM_ADDR_ERROR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "VPU_C1_HALT",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "VPU_C0_C1_HALT",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "BELL_IRQ1",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "BELL_IRQ0",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MAILBOX_IRQ0",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "TIMER_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x2e0",
+		"Name": "IRQ3_CLR_EN_0",
+		"Description": "Write to Clear ARM Core 3 IRQ enable bits [31:0]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_31_0",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x2e4",
+		"Name": "IRQ3_CLR_EN_1",
+		"Description": "Write to Clear ARM Core 3 IRQ enable bits [63:32]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_63_32",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x2e8",
+		"Name": "IRQ3_CLR_EN_2",
+		"Description": "Write to Clear ARM Core 3 IRQ enable bits [79:64]",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "IRQ",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:08",
+				"Name": "SW_TRIG_INT",
+				"Type": "W1C",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "07",
+				"Name": "ARM_AXI_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "ARM_ADDR_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "VPU_C1_HALT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "VPU_C0_C1_HALT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "BELL_IRQ1",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "BELL_IRQ0",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MAILBOX_IRQ0",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "TIMER_IRQ",
+				"Type": "W1C",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x300",
+		"Name": "FIQ0_PENDING0",
+		"Description": "ARM Core 0 FIQ Enabled Interrupt pending bits [31:0]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_31_0",
+				"Type": "RO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x304",
+		"Name": "FIQ0_PENDING1",
+		"Description": "ARM Core 0 FIQ Enabled Interrupt pending bits [63:32]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_63_32",
+				"Type": "RO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x308",
+		"Name": "FIQ0_PENDING2",
+		"Description": "ARM Core 0 FIQ Enabled Interrupt pending bits [79:64]",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25",
+				"Name": "INT63_32",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "24",
+				"Name": "INT31_0",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:08",
+				"Name": "SW_TRIG_INT",
+				"Type": "RO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "07",
+				"Name": "ARM_AXI_ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "ARM_ADDR_ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "VPU_C1_HALT",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "VPU_C0_C1_HALT",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "BELL_IRQ1",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "BELL_IRQ0",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MAILBOX_IRQ0",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "TIMER_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x310",
+		"Name": "FIQ0_SET_EN_0",
+		"Description": "Write to Set ARM Core 0 FIQ enable bits [31:0]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_31_0",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x314",
+		"Name": "FIQ0_SET_EN_1",
+		"Description": "Write to Set ARM Core 0 FIQ enable bits [63:32]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_63_32",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x318",
+		"Name": "FIQ0_SET_EN_2",
+		"Description": "Write to Set ARM Core 0 FIQ enable bits[79:64]",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:08",
+				"Name": "SW_TRIG_INT",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "07",
+				"Name": "ARM_AXI_ERROR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "ARM_ADDR_ERROR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "VPU_C1_HALT",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "VPU_C0_C1_HALT",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "BELL_IRQ1",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "BELL_IRQ0",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MAILBOX_IRQ0",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "TIMER_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x320",
+		"Name": "FIQ0_CLR_EN_0",
+		"Description": "Write to Clear ARM Core 0 FIQ enable bits [31:0]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_31_0",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x324",
+		"Name": "FIQ0_CLR_EN_1",
+		"Description": "Write to Clear ARM Core 0 FIQ enable bits [63:32]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_63_32",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x328",
+		"Name": "FIQ0_CLR_EN_2",
+		"Description": "Write to Clear ARM Core 0 FIQ enable bits [79:64]",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "IRQ",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:08",
+				"Name": "SW_TRIG_INT",
+				"Type": "W1C",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "07",
+				"Name": "ARM_AXI_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "ARM_ADDR_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "VPU_C1_HALT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "VPU_C0_C1_HALT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "BELL_IRQ1",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "BELL_IRQ0",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MAILBOX_IRQ0",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "TIMER_IRQ",
+				"Type": "W1C",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x340",
+		"Name": "FIQ1_PENDING0",
+		"Description": "ARM Core 1 FIQ Enabled Interrupt pending bits [31:0]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_31_0",
+				"Type": "RO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x344",
+		"Name": "FIQ1_PENDING1",
+		"Description": "ARM Core 1 FIQ Enabled Interrupt pending bits [63:32]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_63_32",
+				"Type": "RO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x348",
+		"Name": "FIQ1_PENDING2",
+		"Description": "ARM Core 1 FIQ Enabled Interrupt pending bits [79:64]",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25",
+				"Name": "INT63_32",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "24",
+				"Name": "INT31_0",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:08",
+				"Name": "SW_TRIG_INT",
+				"Type": "RO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "07",
+				"Name": "ARM_AXI_ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "ARM_ADDR_ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "VPU_C1_HALT",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "VPU_C0_C1_HALT",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "BELL_IRQ1",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "BELL_IRQ0",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MAILBOX_IRQ0",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "TIMER_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x350",
+		"Name": "FIQ1_SET_EN_0",
+		"Description": "Write to Set ARM Core 1 FIQ enable bits [31:0]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_31_0",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x354",
+		"Name": "FIQ1_SET_EN_1",
+		"Description": "Write to Set ARM Core 1 FIQ enable bits [63:32]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_63_32",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x358",
+		"Name": "FIQ1_SET_EN_2",
+		"Description": "Write to Set ARM Core 1 FIQ enable bits[79:64]",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:08",
+				"Name": "SW_TRIG_INT",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "07",
+				"Name": "ARM_AXI_ERROR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "ARM_ADDR_ERROR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "VPU_C1_HALT",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "VPU_C0_C1_HALT",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "BELL_IRQ1",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "BELL_IRQ0",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MAILBOX_IRQ0",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "TIMER_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x360",
+		"Name": "FIQ1_CLR_EN_0",
+		"Description": "Write to Clear ARM Core 1 FIQ enable bits [31:0]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_31_0",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x364",
+		"Name": "FIQ1_CLR_EN_1",
+		"Description": "Write to Clear ARM Core 1 FIQ enable bits [63:32]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_63_32",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x368",
+		"Name": "FIQ1_CLR_EN_2",
+		"Description": "Write to Clear ARM Core 1 FIQ enable bits [79:64]",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "IRQ",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:08",
+				"Name": "SW_TRIG_INT",
+				"Type": "W1C",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "07",
+				"Name": "ARM_AXI_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "ARM_ADDR_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "VPU_C1_HALT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "VPU_C0_C1_HALT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "BELL_IRQ1",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "BELL_IRQ0",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MAILBOX_IRQ0",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "TIMER_IRQ",
+				"Type": "W1C",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x380",
+		"Name": "FIQ2_PENDING0",
+		"Description": "ARM Core 2 FIQ Enabled Interrupt pending bits [31:0]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_31_0",
+				"Type": "RO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x384",
+		"Name": "FIQ2_PENDING1",
+		"Description": "ARM Core 2 FIQ Enabled Interrupt pending bits [63:32]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_63_32",
+				"Type": "RO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x388",
+		"Name": "FIQ2_PENDING2",
+		"Description": "ARM Core 2 FIQ Enabled Interrupt pending bits [79:64]",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25",
+				"Name": "INT63_32",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "24",
+				"Name": "INT31_0",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:08",
+				"Name": "SW_TRIG_INT",
+				"Type": "RO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "07",
+				"Name": "ARM_AXI_ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "ARM_ADDR_ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "VPU_C1_HALT",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "VPU_C0_C1_HALT",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "BELL_IRQ1",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "BELL_IRQ0",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MAILBOX_IRQ0",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "TIMER_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x390",
+		"Name": "FIQ2_SET_EN_0",
+		"Description": "Write to Set ARM Core 2 FIQ enable bits [31:0]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_31_0",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x394",
+		"Name": "FIQ2_SET_EN_1",
+		"Description": "Write to Set ARM Core 2 FIQ enable bits [63:32]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_63_32",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x398",
+		"Name": "FIQ2_SET_EN_2",
+		"Description": "Write to Set ARM Core 2 FIQ enable bits[79:64]",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:08",
+				"Name": "SW_TRIG_INT",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "07",
+				"Name": "ARM_AXI_ERROR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "ARM_ADDR_ERROR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "VPU_C1_HALT",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "VPU_C0_C1_HALT",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "BELL_IRQ1",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "BELL_IRQ0",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MAILBOX_IRQ0",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "TIMER_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x3a0",
+		"Name": "FIQ2_CLR_EN_0",
+		"Description": "Write to Clear ARM Core 2 FIQ enable bits [31:0]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_31_0",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x3a4",
+		"Name": "FIQ2_CLR_EN_1",
+		"Description": "Write to Clear ARM Core 2 FIQ enable bits [63:32]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_63_32",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x3a8",
+		"Name": "FIQ2_CLR_EN_2",
+		"Description": "Write to Clear ARM Core 2 FIQ enable bits [79:64]",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "IRQ",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:08",
+				"Name": "SW_TRIG_INT",
+				"Type": "W1C",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "07",
+				"Name": "ARM_AXI_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "ARM_ADDR_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "VPU_C1_HALT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "VPU_C0_C1_HALT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "BELL_IRQ1",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "BELL_IRQ0",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MAILBOX_IRQ0",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "TIMER_IRQ",
+				"Type": "W1C",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x3c0",
+		"Name": "FIQ3_PENDING0",
+		"Description": "ARM Core 3 FIQ Enabled Interrupt pending bits [31:0]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_31_0",
+				"Type": "RO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x3c4",
+		"Name": "FIQ3_PENDING1",
+		"Description": "ARM Core 3 FIQ Enabled Interrupt pending bits [63:32]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_63_32",
+				"Type": "RO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x3c8",
+		"Name": "FIQ3_PENDING2",
+		"Description": "ARM Core 3 FIQ Enabled Interrupt pending bits [79:64]",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25",
+				"Name": "INT63_32",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "24",
+				"Name": "INT31_0",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:08",
+				"Name": "SW_TRIG_INT",
+				"Type": "RO",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "07",
+				"Name": "ARM_AXI_ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "ARM_ADDR_ERROR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "VPU_C1_HALT",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "VPU_C0_C1_HALT",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "BELL_IRQ1",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "BELL_IRQ0",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MAILBOX_IRQ0",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "TIMER_IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x3d0",
+		"Name": "FIQ3_SET_EN_0",
+		"Description": "Write to Set ARM Core 3 FIQ enable bits [31:0]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_31_0",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x3d4",
+		"Name": "FIQ3_SET_EN_1",
+		"Description": "Write to Set ARM Core 3 FIQ enable bits [63:32]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_63_32",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x3d8",
+		"Name": "FIQ3_SET_EN_2",
+		"Description": "Write to Set ARM Core 3 FIQ enable bits[79:64]",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:08",
+				"Name": "SW_TRIG_INT",
+				"Type": "RW",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "07",
+				"Name": "ARM_AXI_ERROR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "ARM_ADDR_ERROR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "VPU_C1_HALT",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "VPU_C0_C1_HALT",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "BELL_IRQ1",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "BELL_IRQ0",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MAILBOX_IRQ0",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "TIMER_IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x3e0",
+		"Name": "FIQ3_CLR_EN_0",
+		"Description": "Write to Clear ARM Core 3 FIQ enable bits [31:0]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_31_0",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x3e4",
+		"Name": "FIQ3_CLR_EN_1",
+		"Description": "Write to Clear ARM Core 3 FIQ enable bits [63:32]",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "VC_IRQ_63_32",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x3e8",
+		"Name": "FIQ3_CLR_EN_2",
+		"Description": "Write to Clear ARM Core 3 FIQ enable bits [79:64]",
+		"Fields": [
+			{
+				"Bits": "31",
+				"Name": "IRQ",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "30:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:08",
+				"Name": "SW_TRIG_INT",
+				"Type": "W1C",
+				"Reset": "0x00"
+			},
+			{
+				"Bits": "07",
+				"Name": "ARM_AXI_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "06",
+				"Name": "ARM_ADDR_ERROR",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "05",
+				"Name": "VPU_C1_HALT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "04",
+				"Name": "VPU_C0_C1_HALT",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "03",
+				"Name": "BELL_IRQ1",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "02",
+				"Name": "BELL_IRQ0",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "01",
+				"Name": "MAILBOX_IRQ0",
+				"Type": "W1C",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "00",
+				"Name": "TIMER_IRQ",
+				"Type": "W1C",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x3f0",
+		"Name": "SWIRQ_SET",
+		"Description": "Write to Set Software Interrupt sources",
+		"Fields": [
+			{
+				"Bits": "31:8",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "07:00",
+				"Name": "SW_INT",
+				"Type": "RW",
+				"Reset": "0x00"
+			}
+		]
+	},
+	{
+		"Offset": "0x3f4",
+		"Name": "SWIRQ_CLEAR",
+		"Description": "Write to Clear Software Interrupt sources",
+		"Fields": [
+			{
+				"Bits": "31:8",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "07:00",
+				"Name": "SW_INT",
+				"Type": "W1C",
+				"Reset": "0x00"
+			}
+		]
+	}
+]

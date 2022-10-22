@@ -1,0 +1,878 @@
+[
+	{
+		"Offset": "0x00",
+		"Name": "DR",
+		"Description": "Data Register",
+		"Fields": [
+			{
+				"Bits": "31:12",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "11",
+				"Name": "OE",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "BE",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "PE",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "FE",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7:0",
+				"Name": "DATA",
+				"Type": "RW",
+				"Reset": "0x00"
+			}
+		]
+	},
+	{
+		"Offset": "0x04",
+		"Name": "RSRECR",
+		"Description": "",
+		"Fields": [
+			{
+				"Bits": "31:4",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "3",
+				"Name": "OE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "BE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "PE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "FE",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x18",
+		"Name": "FR",
+		"Description": "Flag register",
+		"Fields": [
+			{
+				"Bits": "31:9",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "8",
+				"Name": "RI",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "TXFE",
+				"Type": "RO",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "6",
+				"Name": "RXFF",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "TXFF",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "RXFE",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "BUSY",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "DCD",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "DSR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "CTS",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x20",
+		"Name": "ILPR",
+		"Description": "not in use",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			}
+		]
+	},
+	{
+		"Offset": "0x24",
+		"Name": "IBRD",
+		"Description": "Integer Baud rate divisor",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "IBRD",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0x28",
+		"Name": "FBRD",
+		"Description": "Fractional Baud rate divisor",
+		"Fields": [
+			{
+				"Bits": "31:6",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "5:0",
+				"Name": "FBRD",
+				"Type": "RW",
+				"Reset": "0x00"
+			}
+		]
+	},
+	{
+		"Offset": "0x2c",
+		"Name": "LCRH",
+		"Description": "Line Control register",
+		"Fields": [
+			{
+				"Bits": "31:8",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "7",
+				"Name": "SPS",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6:5",
+				"Name": "WLEN",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "FEN",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "STP2",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "EPS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "PEN",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "BRK",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x30",
+		"Name": "CR",
+		"Description": "Control register",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15",
+				"Name": "CTSEN",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14",
+				"Name": "RTSEN",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "13",
+				"Name": "OUT2",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "12",
+				"Name": "OUT1",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11",
+				"Name": "RTS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "DTR",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "RXE",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "8",
+				"Name": "TXE",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "7",
+				"Name": "LBE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6:3",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "2",
+				"Name": "SIRLP",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "SIREN",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "UARTEN",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x34",
+		"Name": "IFLS",
+		"Description": "Interrupt FIFO Level Select Register",
+		"Fields": [
+			{
+				"Bits": "31:12",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "11:9",
+				"Name": "RXIFPSEL",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8:6",
+				"Name": "TXIFPSEL",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5:3",
+				"Name": "RXIFLSEL",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "2:0",
+				"Name": "TXIFLSEL",
+				"Type": "RW",
+				"Reset": "0x2"
+			}
+		]
+	},
+	{
+		"Offset": "0x38",
+		"Name": "IMSC",
+		"Description": "Interrupt Mask Set Clear Register",
+		"Fields": [
+			{
+				"Bits": "31:11",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "10",
+				"Name": "OEIM",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "BEIM",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "PEIM",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "FEIM",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "RTIM",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "TXIM",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "RXIM",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "DSRMIM",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "DCDMIM",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "CTSMIM",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "RIMIM",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x3c",
+		"Name": "RIS",
+		"Description": "Raw Interrupt Status Register",
+		"Fields": [
+			{
+				"Bits": "31:11",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "10",
+				"Name": "OERIS",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "BERIS",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "PERIS",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "FERIS",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "RTRIS",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "TXRIS",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "RXRIS",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "DSRRMIS",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "DCDRMIS",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "CTSRMIS",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "RIRMIS",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x40",
+		"Name": "MIS",
+		"Description": "Masked Interrupt Status Register",
+		"Fields": [
+			{
+				"Bits": "31:11",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "10",
+				"Name": "OEMIS",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "BEMIS",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "PEMIS",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "FEMIS",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "RTMIS",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "TXMIS",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "RXMIS",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "DSRMMIS",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "DCDMMIS",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "CTSMMIS",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "RIMMIS",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x44",
+		"Name": "ICR",
+		"Description": "Interrupt Clear Register",
+		"Fields": [
+			{
+				"Bits": "31:11",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "10",
+				"Name": "OEIC",
+				"Type": "WO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "BEIC",
+				"Type": "WO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "PEIC",
+				"Type": "WO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "FEIC",
+				"Type": "WO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "RTIC",
+				"Type": "WO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "TXIC",
+				"Type": "WO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "RXIC",
+				"Type": "WO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "DSRMIC",
+				"Type": "WO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "DCDMIC",
+				"Type": "WO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "CTSMIC",
+				"Type": "WO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "RIMIC",
+				"Type": "WO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x48",
+		"Name": "DMACR",
+		"Description": "DMA Control Register",
+		"Fields": [
+			{
+				"Bits": "31:3",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "2",
+				"Name": "DMAONERR",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "TXDMAE",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "RXDMAE",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x80",
+		"Name": "ITCR",
+		"Description": "Test Control register",
+		"Fields": [
+			{
+				"Bits": "31:2",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "1",
+				"Name": "ITCR1",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "ITCR0",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x84",
+		"Name": "ITIP",
+		"Description": "Integration test input reg",
+		"Fields": [
+			{
+				"Bits": "31:4",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "3",
+				"Name": "ITIP3",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2:1",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "0",
+				"Name": "ITIP0",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x88",
+		"Name": "ITOP",
+		"Description": "Integration test output reg",
+		"Fields": [
+			{
+				"Bits": "31:12",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "11",
+				"Name": "ITOP11",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "ITOP10",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "ITOP9",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "ITOP8",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "ITOP7",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "ITOP6",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5:4",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "3",
+				"Name": "ITOP3",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2:1",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "0",
+				"Name": "ITOP0",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x8c",
+		"Name": "TDR",
+		"Description": "Test Data reg",
+		"Fields": [
+			{
+				"Bits": "31:11",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "10:0",
+				"Name": "TDR10_0",
+				"Type": "RW",
+				"Reset": "0x000"
+			}
+		]
+	}
+]

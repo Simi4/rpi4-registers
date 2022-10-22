@@ -1,0 +1,1130 @@
+[
+	{
+		"Offset": "0x00",
+		"Name": "GPFSEL0",
+		"Description": "GPIO Function Select 0",
+		"Fields": [
+			{
+				"Bits": "31:30",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "29:27",
+				"Name": "FSEL9",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "26:24",
+				"Name": "FSEL8",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23:21",
+				"Name": "FSEL7",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "20:18",
+				"Name": "FSEL6",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "17:15",
+				"Name": "FSEL5",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14:12",
+				"Name": "FSEL4",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11:9",
+				"Name": "FSEL3",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8:6",
+				"Name": "FSEL2",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5:3",
+				"Name": "FSEL1",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2:0",
+				"Name": "FSEL0",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x04",
+		"Name": "GPFSEL1",
+		"Description": "GPIO Function Select 1",
+		"Fields": [
+			{
+				"Bits": "31:30",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "29:27",
+				"Name": "FSEL19",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "26:24",
+				"Name": "FSEL18",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23:21",
+				"Name": "FSEL17",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "20:18",
+				"Name": "FSEL16",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "17:15",
+				"Name": "FSEL15",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14:12",
+				"Name": "FSEL14",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11:9",
+				"Name": "FSEL13",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8:6",
+				"Name": "FSEL12",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5:3",
+				"Name": "FSEL11",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2:0",
+				"Name": "FSEL10",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x08",
+		"Name": "GPFSEL2",
+		"Description": "GPIO Function Select 2",
+		"Fields": [
+			{
+				"Bits": "31:30",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "29:27",
+				"Name": "FSEL29",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "26:24",
+				"Name": "FSEL28",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23:21",
+				"Name": "FSEL27",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "20:18",
+				"Name": "FSEL26",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "17:15",
+				"Name": "FSEL25",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14:12",
+				"Name": "FSEL24",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11:9",
+				"Name": "FSEL23",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8:6",
+				"Name": "FSEL22",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5:3",
+				"Name": "FSEL21",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2:0",
+				"Name": "FSEL20",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x0c",
+		"Name": "GPFSEL3",
+		"Description": "GPIO Function Select 3",
+		"Fields": [
+			{
+				"Bits": "31:30",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "29:27",
+				"Name": "FSEL39",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "26:24",
+				"Name": "FSEL38",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23:21",
+				"Name": "FSEL37",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "20:18",
+				"Name": "FSEL36",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "17:15",
+				"Name": "FSEL35",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14:12",
+				"Name": "FSEL34",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11:9",
+				"Name": "FSEL33",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8:6",
+				"Name": "FSEL32",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5:3",
+				"Name": "FSEL31",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2:0",
+				"Name": "FSEL30",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x10",
+		"Name": "GPFSEL4",
+		"Description": "GPIO Function Select 4",
+		"Fields": [
+			{
+				"Bits": "31:30",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "29:27",
+				"Name": "FSEL49",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "26:24",
+				"Name": "FSEL48",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23:21",
+				"Name": "FSEL47",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "20:18",
+				"Name": "FSEL46",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "17:15",
+				"Name": "FSEL45",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14:12",
+				"Name": "FSEL44",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11:9",
+				"Name": "FSEL43",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8:6",
+				"Name": "FSEL42",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5:3",
+				"Name": "FSEL41",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2:0",
+				"Name": "FSEL40",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x14",
+		"Name": "GPFSEL5",
+		"Description": "GPIO Function Select 5",
+		"Fields": [
+			{
+				"Bits": "31:24",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "23:21",
+				"Name": "FSEL57",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "20:18",
+				"Name": "FSEL56",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "17:15",
+				"Name": "FSEL55",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14:12",
+				"Name": "FSEL54",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11:9",
+				"Name": "FSEL53",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8:6",
+				"Name": "FSEL52",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5:3",
+				"Name": "FSEL51",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2:0",
+				"Name": "FSEL50",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x1c",
+		"Name": "GPSET0",
+		"Description": "GPIO Pin Output Set 0",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "SETn (n=0..31)",
+				"Type": "WO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x20",
+		"Name": "GPSET1",
+		"Description": "GPIO Pin Output Set 1",
+		"Fields": [
+			{
+				"Bits": "31:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25:0",
+				"Name": "SETn (n=32..57)",
+				"Type": "WO",
+				"Reset": "0x0000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x28",
+		"Name": "GPCLR0",
+		"Description": "GPIO Pin Output Clear 0",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "CLRn (n=0..31)",
+				"Type": "WO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x2c",
+		"Name": "GPCLR1",
+		"Description": "GPIO Pin Output Clear 1",
+		"Fields": [
+			{
+				"Bits": "31:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25:0",
+				"Name": "CLRn (n=32..57)",
+				"Type": "WO",
+				"Reset": "0x0000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x34",
+		"Name": "GPLEV0",
+		"Description": "GPIO Pin Level 0",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "LEVn (n=0..31)",
+				"Type": "RO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x38",
+		"Name": "GPLEV1",
+		"Description": "GPIO Pin Level 1",
+		"Fields": [
+			{
+				"Bits": "31:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25:0",
+				"Name": "LEVn (n=32..57)",
+				"Type": "RO",
+				"Reset": "0x0000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x40",
+		"Name": "GPEDS0",
+		"Description": "GPIO Pin Event Detect Status 0",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "EDSn (n=0..31)",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x44",
+		"Name": "GPEDS1",
+		"Description": "GPIO Pin Event Detect Status 1",
+		"Fields": [
+			{
+				"Bits": "31:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25:0",
+				"Name": "EDSn (n=32..57)",
+				"Type": "W1C",
+				"Reset": "0x0000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x4c",
+		"Name": "GPREN0",
+		"Description": "GPIO Pin Rising Edge Detect Enable 0",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "RENn (n=0..31)",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x50",
+		"Name": "GPREN1",
+		"Description": "GPIO Pin Rising Edge Detect Enable 1",
+		"Fields": [
+			{
+				"Bits": "31:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25:0",
+				"Name": "RENn (n=32..57)",
+				"Type": "RW",
+				"Reset": "0x0000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x58",
+		"Name": "GPFEN0",
+		"Description": "GPIO Pin Falling Edge Detect Enable 0",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "FENn (n=0..31)",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x5c",
+		"Name": "GPFEN1",
+		"Description": "GPIO Pin Falling Edge Detect Enable 1",
+		"Fields": [
+			{
+				"Bits": "31:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25:0",
+				"Name": "FENn (n=32..57)",
+				"Type": "RW",
+				"Reset": "0x0000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x64",
+		"Name": "GPHEN0",
+		"Description": "GPIO Pin High Detect Enable 0",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "HENn (n=0..31)",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x68",
+		"Name": "GPHEN1",
+		"Description": "GPIO Pin High Detect Enable 1",
+		"Fields": [
+			{
+				"Bits": "31:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25:0",
+				"Name": "HENn (n=32..57)",
+				"Type": "RW",
+				"Reset": "0x0000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x70",
+		"Name": "GPLEN0",
+		"Description": "GPIO Pin Low Detect Enable 0",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "LENn (n=0..31)",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x74",
+		"Name": "GPLEN1",
+		"Description": "GPIO Pin Low Detect Enable 1",
+		"Fields": [
+			{
+				"Bits": "31:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25:0",
+				"Name": "LENn (n=32..57)",
+				"Type": "RW",
+				"Reset": "0x0000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x7c",
+		"Name": "GPAREN0",
+		"Description": "GPIO Pin Async. Rising Edge Detect 0",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "ARENn (n=0..31)",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x80",
+		"Name": "GPAREN1",
+		"Description": "GPIO Pin Async. Rising Edge Detect 1",
+		"Fields": [
+			{
+				"Bits": "31:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25:0",
+				"Name": "ARENn (n=32..57)",
+				"Type": "RW",
+				"Reset": "0x0000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x88",
+		"Name": "GPAFEN0",
+		"Description": "GPIO Pin Async. Falling Edge Detect 0",
+		"Fields": [
+			{
+				"Bits": "31:0",
+				"Name": "AFENn (n=0..31)",
+				"Type": "RW",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x8c",
+		"Name": "GPAFEN1",
+		"Description": "GPIO Pin Async. Falling Edge Detect 1",
+		"Fields": [
+			{
+				"Bits": "31:26",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "25:0",
+				"Name": "AFENn (n=32..57)",
+				"Type": "RW",
+				"Reset": "0x0000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xe4",
+		"Name": "GPIO_PUP_PDN_CNTRL_REG0",
+		"Description": "GPIO Pull-up / Pull-down Register 0",
+		"Fields": [
+			{
+				"Bits": "31:30",
+				"Name": "GPIO_PUP_PDN_CNTRL15",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "29:28",
+				"Name": "GPIO_PUP_PDN_CNTRL14",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "27:26",
+				"Name": "GPIO_PUP_PDN_CNTRL13",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "25:24",
+				"Name": "GPIO_PUP_PDN_CNTRL12",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "23:22",
+				"Name": "GPIO_PUP_PDN_CNTRL11",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "21:20",
+				"Name": "GPIO_PUP_PDN_CNTRL10",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "19:18",
+				"Name": "GPIO_PUP_PDN_CNTRL09",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "17:16",
+				"Name": "GPIO_PUP_PDN_CNTRL08",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "15:14",
+				"Name": "GPIO_PUP_PDN_CNTRL07",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "13:12",
+				"Name": "GPIO_PUP_PDN_CNTRL06",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "11:10",
+				"Name": "GPIO_PUP_PDN_CNTRL05",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "09:08",
+				"Name": "GPIO_PUP_PDN_CNTRL04",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "07:06",
+				"Name": "GPIO_PUP_PDN_CNTRL03",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "05:04",
+				"Name": "GPIO_PUP_PDN_CNTRL02",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "03:02",
+				"Name": "GPIO_PUP_PDN_CNTRL01",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "01:00",
+				"Name": "GPIO_PUP_PDN_CNTRL00",
+				"Type": "RW",
+				"Reset": "0x1"
+			}
+		]
+	},
+	{
+		"Offset": "0xe8",
+		"Name": "GPIO_PUP_PDN_CNTRL_REG1",
+		"Description": "GPIO Pull-up / Pull-down Register 1",
+		"Fields": [
+			{
+				"Bits": "31:30",
+				"Name": "GPIO_PUP_PDN_CNTRL31",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "29:28",
+				"Name": "GPIO_PUP_PDN_CNTRL30",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "27:26",
+				"Name": "GPIO_PUP_PDN_CNTRL29",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "25:24",
+				"Name": "GPIO_PUP_PDN_CNTRL28",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23:22",
+				"Name": "GPIO_PUP_PDN_CNTRL27",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "21:20",
+				"Name": "GPIO_PUP_PDN_CNTRL26",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "19:18",
+				"Name": "GPIO_PUP_PDN_CNTRL25",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "17:16",
+				"Name": "GPIO_PUP_PDN_CNTRL24",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "15:14",
+				"Name": "GPIO_PUP_PDN_CNTRL23",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "13:12",
+				"Name": "GPIO_PUP_PDN_CNTRL22",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "11:10",
+				"Name": "GPIO_PUP_PDN_CNTRL21",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "09:08",
+				"Name": "GPIO_PUP_PDN_CNTRL20",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "07:06",
+				"Name": "GPIO_PUP_PDN_CNTRL19",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "05:04",
+				"Name": "GPIO_PUP_PDN_CNTRL18",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "03:02",
+				"Name": "GPIO_PUP_PDN_CNTRL17",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "01:00",
+				"Name": "GPIO_PUP_PDN_CNTRL16",
+				"Type": "RW",
+				"Reset": "0x2"
+			}
+		]
+	},
+	{
+		"Offset": "0xec",
+		"Name": "GPIO_PUP_PDN_CNTRL_REG2",
+		"Description": "GPIO Pull-up / Pull-down Register 2",
+		"Fields": [
+			{
+				"Bits": "31:30",
+				"Name": "GPIO_PUP_PDN_CNTRL47",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "29:28",
+				"Name": "GPIO_PUP_PDN_CNTRL46",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "27:26",
+				"Name": "GPIO_PUP_PDN_CNTRL45",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "25:24",
+				"Name": "GPIO_PUP_PDN_CNTRL44",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23:22",
+				"Name": "GPIO_PUP_PDN_CNTRL43",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "21:20",
+				"Name": "GPIO_PUP_PDN_CNTRL42",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "19:18",
+				"Name": "GPIO_PUP_PDN_CNTRL41",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "17:16",
+				"Name": "GPIO_PUP_PDN_CNTRL40",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "15:14",
+				"Name": "GPIO_PUP_PDN_CNTRL39",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "13:12",
+				"Name": "GPIO_PUP_PDN_CNTRL38",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "11:10",
+				"Name": "GPIO_PUP_PDN_CNTRL37",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "09:08",
+				"Name": "GPIO_PUP_PDN_CNTRL36",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "07:06",
+				"Name": "GPIO_PUP_PDN_CNTRL35",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "05:04",
+				"Name": "GPIO_PUP_PDN_CNTRL34",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "03:02",
+				"Name": "GPIO_PUP_PDN_CNTRL33",
+				"Type": "RW",
+				"Reset": "0x2"
+			},
+			{
+				"Bits": "01:00",
+				"Name": "GPIO_PUP_PDN_CNTRL32",
+				"Type": "RW",
+				"Reset": "0x2"
+			}
+		]
+	},
+	{
+		"Offset": "0xf0",
+		"Name": "GPIO_PUP_PDN_CNTRL_REG3",
+		"Description": "GPIO Pull-up / Pull-down Register 3",
+		"Fields": [
+			{
+				"Bits": "31:20",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "19:18",
+				"Name": "GPIO_PUP_PDN_CNTRL57",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "17:16",
+				"Name": "GPIO_PUP_PDN_CNTRL56",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "15:14",
+				"Name": "GPIO_PUP_PDN_CNTRL55",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "13:12",
+				"Name": "GPIO_PUP_PDN_CNTRL54",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "11:10",
+				"Name": "GPIO_PUP_PDN_CNTRL53",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "09:08",
+				"Name": "GPIO_PUP_PDN_CNTRL52",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "07:06",
+				"Name": "GPIO_PUP_PDN_CNTRL51",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "05:04",
+				"Name": "GPIO_PUP_PDN_CNTRL50",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "03:02",
+				"Name": "GPIO_PUP_PDN_CNTRL49",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "01:00",
+				"Name": "GPIO_PUP_PDN_CNTRL48",
+				"Type": "RW",
+				"Reset": "0x1"
+			}
+		]
+	}
+]

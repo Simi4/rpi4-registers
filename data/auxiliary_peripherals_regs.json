@@ -1,0 +1,1221 @@
+[
+	{
+		"Offset": "0x00",
+		"Name": "AUX_IRQ",
+		"Description": "Auxiliary Interrupt status",
+		"Fields": [
+			{
+				"Bits": "31:3",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "2",
+				"Name": "SPI 2 IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "SPI 1 IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "Mini UART IRQ",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x04",
+		"Name": "AUX_ENABLES",
+		"Description": "Auxiliary enables",
+		"Fields": [
+			{
+				"Bits": "31:3",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "2",
+				"Name": "SPI2 enable",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "SPI 1 enable",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "Mini UART enable",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x40",
+		"Name": "AUX_MU_IO_REG",
+		"Description": "Mini UART I/O Data",
+		"Fields": [
+			{
+				"Bits": "31:8",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "7:0",
+				"Name": "???(conditional)",
+				"Type": "RW",
+				"Reset": "0x00"
+			}
+		]
+	},
+	{
+		"Offset": "0x44",
+		"Name": "AUX_MU_IER_REG",
+		"Description": "Mini UART Interrupt Enable",
+		"Fields": [
+			{
+				"Bits": "31:8",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "7:0",
+				"Name": "???(conditional)",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x48",
+		"Name": "AUX_MU_IIR_REG",
+		"Description": "Mini UART Interrupt Identify",
+		"Fields": [
+			{
+				"Bits": "31:8",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "7:6",
+				"Name": "FIFO enables",
+				"Type": "RO",
+				"Reset": "0x3"
+			},
+			{
+				"Bits": "5:4",
+				"Name": "-",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "-",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2:1",
+				"Name": "???(conditional)",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "Interrupt pending",
+				"Type": "RO",
+				"Reset": "0x1"
+			}
+		]
+	},
+	{
+		"Offset": "0x4c",
+		"Name": "AUX_MU_LCR_REG",
+		"Description": "Mini UART Line Control",
+		"Fields": [
+			{
+				"Bits": "31:8",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "7",
+				"Name": "DLAB access",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "Break",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5:1",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "0",
+				"Name": "Data size",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x50",
+		"Name": "AUX_MU_MCR_REG",
+		"Description": "Mini UART Modem Control",
+		"Fields": [
+			{
+				"Bits": "31:2",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "1",
+				"Name": "RTS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			}
+		]
+	},
+	{
+		"Offset": "0x54",
+		"Name": "AUX_MU_LSR_REG",
+		"Description": "Mini UART Line Status",
+		"Fields": [
+			{
+				"Bits": "31:7",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "6",
+				"Name": "Transmitter idle",
+				"Type": "RO",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "5",
+				"Name": "Transmitter empty",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4:2",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "1",
+				"Name": "Receiver Overrun",
+				"Type": "RC",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "Data ready",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x58",
+		"Name": "AUX_MU_MSR_REG",
+		"Description": "Mini UART Modem Status",
+		"Fields": [
+			{
+				"Bits": "31:5",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "4",
+				"Name": "CTS status",
+				"Type": "RO",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "3:0",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			}
+		]
+	},
+	{
+		"Offset": "0x5c",
+		"Name": "AUX_MU_SCRATCH",
+		"Description": "Mini UART Scratch",
+		"Fields": [
+			{
+				"Bits": "31:8",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "7:0",
+				"Name": "Scratch",
+				"Type": "RW",
+				"Reset": "0x00"
+			}
+		]
+	},
+	{
+		"Offset": "0x60",
+		"Name": "AUX_MU_CNTL_REG",
+		"Description": "Mini UART Extra Control",
+		"Fields": [
+			{
+				"Bits": "31:8",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "7",
+				"Name": "CTS assert level",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "RTS assert level",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5:4",
+				"Name": "RTS AUTO flow level",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "Enable transmit Auto flow-control using CTS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "2",
+				"Name": "Enable receive Auto flow-control using RTS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "1",
+				"Name": "Transmitter enable",
+				"Type": "RW",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "0",
+				"Name": "Receiver enable",
+				"Type": "RW",
+				"Reset": "0x1"
+			}
+		]
+	},
+	{
+		"Offset": "0x64",
+		"Name": "AUX_MU_STAT_REG",
+		"Description": "Mini UART Extra Status",
+		"Fields": [
+			{
+				"Bits": "31:28",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "27:24",
+				"Name": "Transmit FIFO fill",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23:20",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "19:16",
+				"Name": "Receive FIFO fill",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "15:10",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "9",
+				"Name": "Transmitter done",
+				"Type": "RO",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "8",
+				"Name": "Transmit FIFO is",
+				"Type": "RO",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "7",
+				"Name": "CTS line",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "RTS status",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5",
+				"Name": "Transmit FIFO is",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "4",
+				"Name": "Receiver overrun",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "3",
+				"Name": "Transmitter is idle",
+				"Type": "RO",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "2",
+				"Name": "Receiver is idle",
+				"Type": "RO",
+				"Reset": "0x1"
+			},
+			{
+				"Bits": "1",
+				"Name": "Space available",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "Symbol available",
+				"Type": "RO",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x68",
+		"Name": "AUX_MU_BAUD_REG",
+		"Description": "Mini UART Baudrate",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "Baudrate",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0x80",
+		"Name": "AUX_SPI1_CNTL0_REG",
+		"Description": "SPI 1 Control register 0",
+		"Fields": [
+			{
+				"Bits": "31:20",
+				"Name": "Speed",
+				"Type": "RW",
+				"Reset": "0x000"
+			},
+			{
+				"Bits": "19:17",
+				"Name": "Chip Selects",
+				"Type": "RW",
+				"Reset": "0x7"
+			},
+			{
+				"Bits": "16",
+				"Name": "Post-input mode",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "15",
+				"Name": "Variable CS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14",
+				"Name": "Variable width",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "13:12",
+				"Name": "DOUT Hold time",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11",
+				"Name": "Enable",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "In rising",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "Clear FIFOs",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "Out rising",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "Invert SPI CLK",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "Shift out MS bit first",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5:0",
+				"Name": "Shift length",
+				"Type": "RW",
+				"Reset": "0x00"
+			}
+		]
+	},
+	{
+		"Offset": "0x84",
+		"Name": "AUX_SPI1_CNTL1_REG",
+		"Description": "SPI 1 Control register 1",
+		"Fields": [
+			{
+				"Bits": "31:11",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "10:8",
+				"Name": "CS high time",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "TX empty IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "Done IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5:2",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "1",
+				"Name": "Shift in MS bit first",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "Keep input",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0x88",
+		"Name": "AUX_SPI1_STAT_REG",
+		"Description": "SPI 1 Status",
+		"Fields": [
+			{
+				"Bits": "31:28",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "27:24",
+				"Name": "TX FIFO level",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23:20",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "19:16",
+				"Name": "RX FIFO level",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "15:11",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "10",
+				"Name": "TX Full",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "TX Empty",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "RX Full",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "RX Empty",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "Busy",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5:0",
+				"Name": "Bit count",
+				"Type": "RO",
+				"Reset": "0x00"
+			}
+		]
+	},
+	{
+		"Offset": "0x8c",
+		"Name": "AUX_SPI1_PEEK_REG",
+		"Description": "SPI 1 Peek",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "Data",
+				"Type": "RO",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0xa0",
+		"Name": "AUX_SPI1_IO_REGa",
+		"Description": "SPI 1 Data",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "Data",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0xa4",
+		"Name": "AUX_SPI1_IO_REGb",
+		"Description": "SPI 1 Data",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "Data",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0xa8",
+		"Name": "AUX_SPI1_IO_REGc",
+		"Description": "SPI 1 Data",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "Data",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0xac",
+		"Name": "AUX_SPI1_IO_REGd",
+		"Description": "SPI 1 Data",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "Data",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0xb0",
+		"Name": "AUX_SPI1_TXHOLD_REGa",
+		"Description": "SPI 1 Extended Data",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "Data",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0xb4",
+		"Name": "AUX_SPI1_TXHOLD_REGb",
+		"Description": "SPI 1 Extended Data",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "Data",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0xb8",
+		"Name": "AUX_SPI1_TXHOLD_REGc",
+		"Description": "SPI 1 Extended Data",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "Data",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0xbc",
+		"Name": "AUX_SPI1_TXHOLD_REGd",
+		"Description": "SPI 1 Extended Data",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "Data",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0xc0",
+		"Name": "AUX_SPI2_CNTL0_REG",
+		"Description": "SPI 2 Control register 0",
+		"Fields": [
+			{
+				"Bits": "31:20",
+				"Name": "Speed",
+				"Type": "RW",
+				"Reset": "0x000"
+			},
+			{
+				"Bits": "19:17",
+				"Name": "Chip Selects",
+				"Type": "RW",
+				"Reset": "0x7"
+			},
+			{
+				"Bits": "16",
+				"Name": "Post-input mode",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "15",
+				"Name": "Variable CS",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "14",
+				"Name": "Variable width",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "13:12",
+				"Name": "DOUT Hold time",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "11",
+				"Name": "Enable",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "10",
+				"Name": "In rising",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "Clear FIFOs",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "Out rising",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "Invert SPI CLK",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "Shift out MS bit first",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5:0",
+				"Name": "Shift length",
+				"Type": "RW",
+				"Reset": "0x00"
+			}
+		]
+	},
+	{
+		"Offset": "0xc4",
+		"Name": "AUX_SPI2_CNTL1_REG",
+		"Description": "SPI 2 Control register 1",
+		"Fields": [
+			{
+				"Bits": "31:11",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "10:8",
+				"Name": "CS high time",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "TX empty IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "Done IRQ",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5:2",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "1",
+				"Name": "Shift in MS bit first",
+				"Type": "RW",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "0",
+				"Name": "Keep input",
+				"Type": "RW",
+				"Reset": "0x0"
+			}
+		]
+	},
+	{
+		"Offset": "0xc8",
+		"Name": "AUX_SPI2_STAT_REG",
+		"Description": "SPI 2 Status",
+		"Fields": [
+			{
+				"Bits": "31:28",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "27:24",
+				"Name": "TX FIFO level",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "23:20",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "19:16",
+				"Name": "RX FIFO level",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "15:11",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "10",
+				"Name": "TX Full",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "9",
+				"Name": "TX Empty",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "8",
+				"Name": "RX Full",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "7",
+				"Name": "RX Empty",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "6",
+				"Name": "Busy",
+				"Type": "RO",
+				"Reset": "0x0"
+			},
+			{
+				"Bits": "5:0",
+				"Name": "Bit count",
+				"Type": "RO",
+				"Reset": "0x00"
+			}
+		]
+	},
+	{
+		"Offset": "0xcc",
+		"Name": "AUX_SPI2_PEEK_REG",
+		"Description": "SPI 2 Peek",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "Data",
+				"Type": "RO",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0xe0",
+		"Name": "AUX_SPI2_IO_REGa",
+		"Description": "SPI 2 Data",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "Data",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0xe4",
+		"Name": "AUX_SPI2_IO_REGb",
+		"Description": "SPI 2 Data",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "Data",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0xe8",
+		"Name": "AUX_SPI2_IO_REGc",
+		"Description": "SPI 2 Data",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "Data",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0xec",
+		"Name": "AUX_SPI2_IO_REGd",
+		"Description": "SPI 2 Data",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "Data",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0xf0",
+		"Name": "AUX_SPI2_TXHOLD_REGa",
+		"Description": "SPI 2 Extended Data",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "Data",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0xf4",
+		"Name": "AUX_SPI2_TXHOLD_REGb",
+		"Description": "SPI 2 Extended Data",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "Data",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0xf8",
+		"Name": "AUX_SPI2_TXHOLD_REGc",
+		"Description": "SPI 2 Extended Data",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "Data",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	},
+	{
+		"Offset": "0xfc",
+		"Name": "AUX_SPI2_TXHOLD_REGd",
+		"Description": "SPI 2 Extended Data",
+		"Fields": [
+			{
+				"Bits": "31:16",
+				"Name": "Reserved.",
+				"Type": "-",
+				"Reset": "-"
+			},
+			{
+				"Bits": "15:0",
+				"Name": "Data",
+				"Type": "RW",
+				"Reset": "0x0000"
+			}
+		]
+	}
+]
