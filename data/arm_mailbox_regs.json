@@ -1,0 +1,418 @@
+[
+	{
+		"Offset": "0x80",
+		"Name": "MBOX_SET00",
+		"Description": "Mailbox 00 Set Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "WO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x84",
+		"Name": "MBOX_SET01",
+		"Description": "Mailbox 01 Set Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "WO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x88",
+		"Name": "MBOX_SET02",
+		"Description": "Mailbox 02 Set Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "WO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x8c",
+		"Name": "MBOX_SET03",
+		"Description": "Mailbox 03 Set Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "WO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x90",
+		"Name": "MBOX_SET04",
+		"Description": "Mailbox 04 Set Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "WO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x94",
+		"Name": "MBOX_SET05",
+		"Description": "Mailbox 05 Set Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "WO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x98",
+		"Name": "MBOX_SET06",
+		"Description": "Mailbox 06 Set Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "WO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0x9c",
+		"Name": "MBOX_SET07",
+		"Description": "Mailbox 07 Set Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "WO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xa0",
+		"Name": "MBOX_SET08",
+		"Description": "Mailbox 08 Set Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "WO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xa4",
+		"Name": "MBOX_SET09",
+		"Description": "Mailbox 09 Set Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "WO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xa8",
+		"Name": "MBOX_SET10",
+		"Description": "Mailbox 10 Set Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "WO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xac",
+		"Name": "MBOX_SET11",
+		"Description": "Mailbox 11 Set Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "WO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xb0",
+		"Name": "MBOX_SET12",
+		"Description": "Mailbox 12 Set Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "WO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xb4",
+		"Name": "MBOX_SET13",
+		"Description": "Mailbox 13 Set Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "WO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xb8",
+		"Name": "MBOX_SET14",
+		"Description": "Mailbox 14 Set Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "WO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xbc",
+		"Name": "MBOX_SET15",
+		"Description": "Mailbox 15 Set Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "WO",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xc0",
+		"Name": "MBOX_CLR00",
+		"Description": "Mailbox 00 Clear Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xc4",
+		"Name": "MBOX_CLR01",
+		"Description": "Mailbox 01 Clear Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xc8",
+		"Name": "MBOX_CLR02",
+		"Description": "Mailbox 02 Clear Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xcc",
+		"Name": "MBOX_CLR03",
+		"Description": "Mailbox 03 Clear Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xd0",
+		"Name": "MBOX_CLR04",
+		"Description": "Mailbox 04 Clear Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xd4",
+		"Name": "MBOX_CLR05",
+		"Description": "Mailbox 05 Clear Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xd8",
+		"Name": "MBOX_CLR06",
+		"Description": "Mailbox 06 Clear Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xdc",
+		"Name": "MBOX_CLR07",
+		"Description": "Mailbox 07 Clear Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xe0",
+		"Name": "MBOX_CLR08",
+		"Description": "Mailbox 08 Clear Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xe4",
+		"Name": "MBOX_CLR09",
+		"Description": "Mailbox 09 Clear Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xe8",
+		"Name": "MBOX_CLR10",
+		"Description": "Mailbox 10 Clear Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xec",
+		"Name": "MBOX_CLR11",
+		"Description": "Mailbox 11 Clear Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xf0",
+		"Name": "MBOX_CLR12",
+		"Description": "Mailbox 12 Clear Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xf4",
+		"Name": "MBOX_CLR13",
+		"Description": "Mailbox 13 Clear Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xf8",
+		"Name": "MBOX_CLR14",
+		"Description": "Mailbox 14 Clear Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	},
+	{
+		"Offset": "0xfc",
+		"Name": "MBOX_CLR15",
+		"Description": "Mailbox 15 Clear Bit Register",
+		"Fields": [
+			{
+				"Bits": "31:00",
+				"Name": "MBOX_DATA",
+				"Type": "W1C",
+				"Reset": "0x00000000"
+			}
+		]
+	}
+]
